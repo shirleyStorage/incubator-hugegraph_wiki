@@ -13,10 +13,11 @@
 
 这里容易产生许多小问题, 请务必逐条确认检查: (不确定的一律以[官方说明](https://infra.apache.org/licensing-howto.html)为准)
 
-1. 每个源码/二进制包(包括发行的 jar 包)**都**都必须提供 `LICENSE + NOTICE`  文件, 其中源码(source)包必须位于项目**根目录**下 (二进制包呢?)
+1. 每个源码/二进制包(包括发行的 jar 包)**都**都必须提供 `LICENSE + NOTICE + DISCLAIMER`  文件, 其中源码(source)包必须位于项目**根目录**下 (二进制包呢?)
 2. `LICENSE` 文件原始版本必须**格式/内容**完整正确, 请直接下载官方提供[版本](https://www.apache.org/licenses/LICENSE-2.0.txt)然后放在项目中
 3. `LICENSE/NOTICE` 文件不可包含**不必要**的信息, 如果移除/更新了依赖则必须及时更新/移除对应的 `LICENSE/NOTICE` 信息
-4. **二进制包**还需要特别注意, 通常它的内容和源码包的 `LICENSE+NOTICE` 文件有**巨大**区别, 因为源码包通常不携带任何二进制依赖
+4. 引用的第三方/其他 license, 必须将详细信息附加到我们的 `LICENSE` 文件后, 如果引用的 `LICENSE` 很长, 则需要单独存储并指向它们
+5. **二进制包**还需要特别注意, 通常它的内容和源码包的 `LICENSE+NOTICE` 文件有**巨大**区别, 因为源码包通常不携带任何二进制依赖
 
 
 
@@ -72,7 +73,16 @@ License 存放自己 + 第三方的许可证比较容易理解, `NOTICE` 文件�
 - [seatunnel](https://github.com/apache/incubator-seatunnel/blob/dev/NOTICE) (推荐)
 - [HTTP Server](https://www.apache.org/licenses/example-NOTICE.txt) (不太推荐)
 
+## Disclaimer
 
+**孵化中**的项目的任何发行包(包括网站)都需要携带 `DISCLAIMER` (免责声明)文件, 这个听起来很法务化的文件有两个选择: (详见官方[说明](https://incubator.apache.org/policy/incubation.html#disclaimers))
+
+1. **标准版:** 可以遵循 ASF 的所有发布政策的孵化项目, 命名为 `DISCLAIMER` 文件
+2. **WIP 版本** (Work In Progress): 意味着发版过程中会**有部分**不能满足 ASF 要求的发布政策, 命名为 `DISCLAIMER-WIP`
+
+两个说明的模板内容是不一样的, WIP 版本需要具体列出"**已知问题列表**", 也就是提醒使用方这些地方可能需要留意检查, 另外要注意的是, 孵化项目在毕业前需要转为标准的 DISCLAIMER 声明 (也就意味着相关发布问题都被解决了)
+
+但是哪些情况是 `WIP` 版本的免责声明可以容忍/携带的呢? 例如说 `GPL` 或是` CC-By` 协议的二进制依赖可以么? 还是说它只适用于一些比较模糊的许可或者是合规性问题呢? (这个需要确认一下)
 
 ## Copyright
 
