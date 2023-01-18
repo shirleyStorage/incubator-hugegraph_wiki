@@ -13,7 +13,9 @@
 
 这里容易产生许多小问题, 请务必逐条确认检查: (不确定的一律以[官方说明](https://infra.apache.org/licensing-howto.html)为准)
 
-1. 每个源码/二进制包(包括发行的 jar 包)**都**都必须提供 `LICENSE + NOTICE + DISCLAIMER`  文件, 其中源码(source)包必须位于项目**根目录**下 (二进制包呢?)
+1. 每个源码/二进制包(包括发行的 jar 包)**都**都必须提供 `LICENSE + NOTICE + DISCLAIMER`  文件
+   - 源码(source)包必须位于项目**根目录**下
+   - 二进制包呢? (参考其他项目一般也在根下, 但不清楚 ASF 是否有硬性要求)
 2. `LICENSE` 文件原始版本必须**格式/内容**完整正确, 请直接下载官方提供[版本](https://www.apache.org/licenses/LICENSE-2.0.txt)然后放在项目中
 3. `LICENSE/NOTICE` 文件不可包含**不必要**的信息, 如果移除/更新了依赖则必须及时更新/移除对应的 `LICENSE/NOTICE` 信息
 4. 引用的第三方/其他 license, 必须将详细信息附加到我们的 `LICENSE` 文件后, 如果引用的 `LICENSE` 很长, 则需要单独存储并指向它们
@@ -120,3 +122,4 @@ License 存放自己 + 第三方的许可证比较容易理解, `NOTICE` 文件�
 这里是一些暂时悬而未定的问题, 大多并没有从  `ASF` 官网上找到足够清晰的定义, 需要和导师/社区一起讨论:
 
 1. xxx
+
