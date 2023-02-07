@@ -159,4 +159,12 @@ License 存放自己 + 第三方的许可证比较容易理解, `NOTICE` 文件�
 
 _持续更新 ing_
 
+---
+
+参考资料:
+1. https://incubator.apache.org/guides/releasemanagement.html (incubator 项目发版指南①)
+2. https://www.apache.org/foundation/preFAQ.html (常见 ASL2.0 协议使用问题)
+3. https://www.apache.org/legal/src-headers.html (常见 License 头引用问题, 包括第三方引用)
+4. https://infra.apache.org/licensing-howto.html (如何编写你的 `LICENSE/NOTICE` 文件)
+5. ...
  
