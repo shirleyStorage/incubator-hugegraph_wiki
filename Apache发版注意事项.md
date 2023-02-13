@@ -115,8 +115,8 @@ License 存放自己 + 第三方的许可证比较容易理解, `NOTICE` 文件�
 这里的不能被包含就不止是说源码中不包含, 编译产生的二进制包理论上也不能包含, 所以使用了类似依赖/插件的部分代码需要移除/重构, 否则会非常棘手, 那有以下可供参考的常见做法:
 
 1. 将这种 Apache 不允许携带的引用变为**可选项**, 例如 oracle 的 `ojdbc.jar` 包, 你可以写文档告诉需要的用户去自行下载然后关联/启用上
-1. 如果一个项目协议多种许可里只是包含了 GPL/LGPL, 那是不会影响你使用的
-1. 另外要注意 `CC (Creative Commons)` license, 如果单独出现 Apache 也是[不允许](https://www.apache.org/legal/resolved.html#cc-by)的 (这个可能大家很容易忽视, 这里强烈建议使用插件扫描)
+2. 如果一个项目协议多种许可里只是包含了 GPL/LGPL, 那是不会影响你使用的
+3. 另外要注意 `CC (Creative Commons)` license, 如果单独出现 Apache 也是[不允许](https://www.apache.org/legal/resolved.html#cc-by)的 (这个可能大家很容易忽视, 这里强烈建议使用插件扫描)
 
 ## Binary/Archive
 
@@ -127,14 +127,23 @@ License 存放自己 + 第三方的许可证比较容易理解, `NOTICE` 文件�
 3. 部分图片可能也会被视为二进制文件, 这部分如非源码必要, 可考虑打包时排除
 4. 如果是必要的图片/二进制, 则需要有清晰的引用说明 (这部分的示例需要找一下)
 
-## Git/GitHub 相关
+## Git/GitHub/官网相关
 
 这里主要是一些容易误解的细节点, 但是出错也会导致发版重回:
 1. 发版分支可以进行单独更新, 但是一旦发版 VOTE 邮件发出, 则必须固化下来/停止后序任何更新提交 (否则会被视为不合规)
 2. 发版的时候, 因为很可能有**多轮**, 所以建议 tag 使用 rc 后缀, 例如 `1.0.0-rc1` 代表第一次投票, 打回则递增 rc 数字 (非强制但建议)
 3. 分支 (branch) 按 ASF [邮件](https://lists.apache.org/thread/k08vq5r4nfos2ptn69w2fbm2mvmkb91n)中提到并不需要, 所以保留 `release-1.0.0` 复用即可 
-4. 可以在发版邮件里携带 tag 最近一次的 commit-ID, 方便确认
+4. 可以在发版邮件里携带 tag 最近一次的 commit-ID(缩略位即可), 方便确认
+5. 发版**未完成**之前, 官网的下载页面**不可**携带临时下载地址 (同理 Github 的 Release 页面务必使用 `pre-release` 而不可使用 `latest release`
+6. 官网下载页面或 Github README 最好有基本的 "完整性校验" + "如何编译源码" 的**文档**说明 (非必要但建议)
 
+为了避免大量不必要的小问题以及人工/手工操作疏忽带来的隐患, 强烈建议增加一些自动化的 CI/Action 来辅助我们进行检查:
+1. maven `RAT` check 二进制/header/archives (必要)
+2. skywalking-license-header check (必要, [link](https://github.com/apache/skywalking-eyes))
+3. skywalking-dependencies generation & check (可选, 建议至少开启 check 部分)
+4. validate release package (可参考 HugeGraph 编写的[验证脚本](https://github.com/apache/incubator-hugegraph-doc/blob/master/.github/workflows/validate-release.yml), 推荐)
+
+然后人工的主要检查聚焦在一些脚本无法覆盖到的地方, 重点关注 "LICENSE + NOTICE + 第三方依赖的头声明" 等问题上, 可以减少大量不必要的开销
 
 ## Hard Question
 
