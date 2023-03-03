@@ -142,6 +142,7 @@ License 存放自己 + 第三方的许可证比较容易理解, `NOTICE` 文件�
 2. skywalking-license-header check (必要, [link](https://github.com/apache/skywalking-eyes))
 3. skywalking-dependencies generation & check (可选, 建议至少开启 check 部分)
 4. validate release package (可参考 HugeGraph 编写的[验证脚本](https://github.com/apache/incubator-hugegraph-doc/blob/master/.github/workflows/validate-release.yml), 推荐)
+5. [dependency-review-action](https://github.com/actions/dependency-review-action) (GitHub 官方提供可检查/排除 license 的 Action)
 
 然后人工的主要检查聚焦在一些脚本无法覆盖到的地方, 重点关注 "LICENSE + NOTICE + 第三方依赖的头声明" 等问题上, 可以减少大量不必要的开销
 
