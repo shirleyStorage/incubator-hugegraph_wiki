@@ -138,9 +138,9 @@ License 存放自己 + 第三方的许可证比较容易理解, `NOTICE` 文件�
 6. 官网下载页面或 Github README 最好有基本的 "完整性校验" + "如何编译源码" 的**文档**说明 (非必要但建议)
 
 为了避免大量不必要的小问题以及人工/手工操作疏忽带来的隐患, 强烈建议增加一些自动化的 CI/Action 来辅助我们进行检查:
-1. maven `RAT` check 二进制/header/archives (必要)
-2. skywalking-license-header check (必要, [link](https://github.com/apache/skywalking-eyes))
-3. skywalking-dependencies generation & check (可选, 建议至少开启 check 部分)
+1. maven `RAT` check 二进制/header/archives (必要, maven 插件)
+2. [skywalking-license-header check](https://github.com/apache/skywalking-eyes) (必要, 还可提供 PR 内 comment 提醒, 很棒)
+3. skywalking-dependencies generation & check (可选, 建议至少开启 check 部分, 文档同上)
 4. validate release package (可参考 HugeGraph 编写的[验证脚本](https://github.com/apache/incubator-hugegraph-doc/blob/master/.github/workflows/validate-release.yml), 推荐)
 5. [dependency-review-action](https://github.com/actions/dependency-review-action) (GitHub 官方提供可检查/排除 license 的 Action)
 
