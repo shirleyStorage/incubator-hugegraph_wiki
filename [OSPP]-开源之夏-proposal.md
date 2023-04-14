@@ -7,7 +7,7 @@
 发起人: @simon824
 
 
-### 2. Computer support load snapshot
+### 2. Computer support load vertex/edge snapshot
 
 发起人: @coderzc
 
