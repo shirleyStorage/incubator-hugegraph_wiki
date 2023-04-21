@@ -8,4 +8,4 @@ Currently, it will redirect to here (move it later)
 - [Readme before doing apache release](https://github.com/apache/incubator-hugegraph/wiki/Apache%E5%8F%91%E7%89%88%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9)
 
 
-https://alc-beijing.github.io/alc-site/post/apache-policy/asf-release-notes/
+[ALC-BeiJing Article](https://alc-beijing.github.io/alc-site/post/apache-policy/asf-release-notes/)
