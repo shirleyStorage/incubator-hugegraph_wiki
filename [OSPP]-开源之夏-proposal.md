@@ -32,15 +32,17 @@
 
 研发需要多久
 
-### 4. 原生并行集合性能优化
+### 4. 性能优化
 
-- 改进 map/set + 实现
+- 改进原生并行集合 primitive map/set + 实现
+- 实现基于 CBO 的查询优化
+- 实现图计算框架的向量化计算优化
 
 ### 5. Go/Xx Client
 
 > 需求度? 不同语言 discussion 投票 (必要不紧急)
 
-PS: python 备注
+PS: python client 已经在路上
 
 ### 6. 分布式存储?
 
