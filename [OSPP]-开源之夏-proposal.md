@@ -18,6 +18,9 @@
 
 ### 2. Computer support load vertex/edge snapshot
 
+- 代码合并
+- xx
+
 发起人: @coderzc (重要不紧急)
 
 ### 3. server 内存管理
