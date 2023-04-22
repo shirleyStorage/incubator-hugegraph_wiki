@@ -36,9 +36,11 @@
 
 - 改进 map/set + 实现
 
-### 5. Go Client
+### 5. Go/Xx Client
 
-> 需求度? discussion 投票 (必要不紧急)
+> 需求度? 不同语言 discussion 投票 (必要不紧急)
+
+PS: python 备注
 
 ### 6. 分布式存储?
 
