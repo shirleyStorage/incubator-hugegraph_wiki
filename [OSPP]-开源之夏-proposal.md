@@ -26,7 +26,7 @@
 - 产出标准：
    1. 实现 vertex/edge 生成 snapshot 保存到 k8s的 Persistent Volume 并将图的 metadata 保存到 etcd 中。
    2. 使 computer 支持直接从 k8s的 Persistent Volume 中 recovery vertex/edge snapshot，并跳过数据分片和从 `hugegraph-server` 中拉取数据的过程。
-   3. 完成 k8s operator 和 API 的相关适配。
+   3. 完成 k8s operator 和 API 调用的相关适配。
    4. 完成相关UT和CI。
 - 技术要求：
 熟悉分布式计算（图计算更佳）和k8s相关理论知识，具备java研发能力。
