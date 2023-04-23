@@ -20,6 +20,7 @@
     2. 属性图数据库, hugegraph更佳
     3. 具备 java/scala 研发能力, 熟悉 Linux 基本使用
 
+难度: 进阶
 发起人: @simon824  (重要紧急)
 
 
@@ -37,6 +38,7 @@
    2. 属性图数据库, hugegraph 更佳, 或熟悉 k8s 相关使用知识
    3. 具备 java 研发能力, Linux 使用
 
+难度: 进阶
 发起人: @coderzc (重要不紧急)
 
 ### 3. server 内存管理
