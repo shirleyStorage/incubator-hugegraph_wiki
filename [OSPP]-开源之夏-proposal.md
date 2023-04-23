@@ -10,7 +10,8 @@
 
 对于 Spark 应用程序中，需要讲 dataframe 写入hugegraph
 
-没有提供 spark connector 连接器，缺乏大数据的流/批处理能力，connector 能增加 hugegraph 在大数据处理场景的适用性，更好地与大数据生态集成。
+没有提供 spark connector 连接器，缺乏大数据的流/批处理能力，connector 能增加 hugegraph 在大数据处理场景的适用性，更好地与大数据生态集成。  
+
 产出标准：
 1. hugegraph-client 支持生成 sst 文件。
 2. 基于 spark datasourceV2 0到1实现 hugegraph-spark-connector
