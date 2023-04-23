@@ -15,7 +15,10 @@
     3. SparkLoader 基于 spark-connector 的重构。
     4. 完成相关UT。
     5. 完成用户使用文档撰写。
-- **技术要求**： 熟悉Spark/Flink/hugegraph，具备java和scala研发能力。
+- **技术要求**： 
+    1. 熟悉 Spark/Flink 环境或相关使用
+    2. 属性图数据库, hugegraph更佳
+    3. 具备 java/scala 研发能力, 熟悉 Linux 基本使用
 
 发起人: @simon824  (重要紧急)
 
@@ -30,7 +33,9 @@
    3. 完成 k8s operator 和 API 调用的相关适配。
    4. 完成相关UT和CI。
 - 技术要求：
-熟悉分布式计算（图计算更佳）和k8s相关理论知识，具备java研发能力。
+   1. 熟悉分布式计算（图计算更佳）
+   2. 属性图数据库, hugegraph 更佳, 或熟悉 k8s 相关使用知识
+   3. 具备 java 研发能力, Linux 使用
 
 发起人: @coderzc (重要不紧急)
 
