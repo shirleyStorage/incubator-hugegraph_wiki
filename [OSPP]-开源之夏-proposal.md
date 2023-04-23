@@ -25,7 +25,7 @@
 目前 hugegraph-computer 每次启动一个算法任务将会在 `k8s` 启动一个 `master` 节点和多个 `worker` 节点并将 `hugegraph-server` 中的图数据进行分片并加载到各 worker 节点上，然后开始并行计算，这个数据分片和加载的流程是非常耗时的，当对同一个图执行不用算法任务时需要再走一遍数据分片加载流程，我们可以将 vertex/edge 生成 snapshot 保存起来，在执行其他算法时 `worker` 可以直接加载 snapshot 来实现一次加载多次执行，这将大大的提高 computer 的执行效率。
 - 产出标准：
    1. 实现 vertex/edge 生成 snapshot 保存到 k8s的 Persistent Volume 并将图的 metadata 保存到 etcd 中。
-   2. 使 computer 支持直接加载 vertex/edge 的 snapshot 从 k8s的 Persistent Volume 中，并跳过数据分片和从 hugegraph-server 中拉取数据的过程。
+   2. 使 computer 支持直接从 k8s的 Persistent Volume 中 recovery vertex/edge snapshot，并跳过数据分片和从 `hugegraph-server` 中拉取数据的过程。
    3. 完成 k8s operator 和 API 的相关适配。
    4. 完成相关UT和CI。
 - 技术要求：
