@@ -1,6 +1,9 @@
 # 前言
 
 > 大家可以在此按章节, 每个 proposal 一个单独的说明, 内容和大体格式参考[官方PDF](https://github.com/apache/incubator-hugegraph/files/11208510/diff_mix.pdf)说明
+> 例如:
+![image](https://user-images.githubusercontent.com/17706099/233821125-31ae6d1a-7ec1-4d20-90d6-9945eea88739.png)
+
 
 ### 1. Spark&Flink Write Connector (toolchain)
 - 描述：
