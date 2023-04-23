@@ -5,16 +5,22 @@
 ![image](https://user-images.githubusercontent.com/17706099/233821125-31ae6d1a-7ec1-4d20-90d6-9945eea88739.png)
 
 
-### 1. Spark&Flink Write Connector (toolchain)
-- 描述：
-目前 hugegraph 社区没有提供 spark/flink connector 连接器，缺乏大数据的流/批处理能力，connector 能增加 hugegraph 在大数据处理场景的适用性，更好地与大数据生态集成。
-- 产出标准：
-   1. 实现 hugegraph spark writer，支持 hugegrpah 点边属性的数据写入。
-   2. 实现 hugegraph flink writer，支持 hugegrpah 点边属性的数据写入。
-   3. 完成使用文档撰写。
-   4. 完成相关UT和CI。
-- 技术要求：
-熟悉Spark/Flink/hugegraph，具备java和scala研发能力。
+### 1. Spark Connector (toolchain)
+描述： 关于Spark的集成，目前 hugegraph 社区有 SparkLoader 的实现，但是目前该实现较基础，缺乏批量生成 sst 文件功能，并且对于 spark 开发者而言将 dataframe 写入 hugegraph，需要自己基于 hugegraph-client 实现写数据逻辑，使用成本较高。为了能增加 hugegraph 在大数据处理场景的适用性，更好地与大数据生态集成，本提案需要实现基于 spark datasourceV2 实现通用的 hugegraph-spark-connector。
+
+对于 Spark 应用程序中，需要讲 dataframe 写入hugegraph
+
+没有提供 spark connector 连接器，缺乏大数据的流/批处理能力，connector 能增加 hugegraph 在大数据处理场景的适用性，更好地与大数据生态集成。
+产出标准：
+1. hugegraph-client 支持生成 sst 文件。
+2. 基于 spark datasourceV2 0到1实现 hugegraph-spark-connector
+ - 支持通过 server 进行批量点、边、属性数据写入。
+ - 支持批量生成 sst 文件。
+3. SparkLoader 基于 spark-connector 的重构。
+4. 完成相关UT。
+5. 完成用户使用文档撰写。
+
+技术要求： 熟悉Spark/Flink/hugegraph，具备java和scala研发能力。
 
 发起人: @simon824  (重要紧急)
 
