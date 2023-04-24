@@ -6,18 +6,18 @@
 
 
 ### 1. Spark Connector (toolchain)
-- **描述**： 关于Spark的集成，目前 hugegraph 社区有 SparkLoader 的实现，但是目前该实现较基础，缺乏批量生成 sst 文件功能，并且对于 spark 开发者而言将 dataframe 写入 hugegraph，需要自己基于 hugegraph-client 实现写数据逻辑，使用成本较高。为了能增加 hugegraph 在大数据处理场景的适用性，更好地与大数据生态集成，本提案需要实现基于 spark datasourceV2 实现通用的 hugegraph-spark-connector，并以此优化现有 SparkLoader。
+- **描述**： 关于 Spark 的集成，目前 hugegraph 社区有 SparkLoader 的实现，但是目前该实现较基础，缺乏批量生成 SST 文件功能，并且对于 spark 开发者而言将 dataframe 写入 hugegraph，需要自己基于 hugegraph-client 实现写数据逻辑，使用成本较高。为了能增加 hugegraph 在大数据处理场景的适用性，更好地与大数据生态集成，本提案需要实现基于 Spark datasource v2 实现通用的 hugegraph-spark-connector，并以此优化现有 SparkLoader。
 - **产出标准**：
     1. hugegraph-client 支持生成 sst 文件。
-    2. 基于 spark datasourceV2 0到1实现 hugegraph-spark-connector
+    2. 基于 spark datasource v2 从0到1的实现 hugegraph-spark-connector
         - 支持通过 server 进行批量点、边、属性数据写入。
-        - 支持批量生成 sst 文件。
+        - 支持批量生成 RocksDB SST 文件。
     3. SparkLoader 基于 spark-connector 的重构。
-    4. 完成相关UT。
+    4. 完成相关单元测试 UT。
     5. 完成用户使用文档撰写。
 - **技术要求**： 
     1. 熟悉 Spark/Flink 环境或相关使用
-    2. 熟悉图数据库, hugegraph更佳
+    2. 熟悉图数据库, 熟悉 hugegraph 更佳
     3. 具备 java/scala 研发能力, 熟悉 Linux 基本使用
 
 难度: 进阶
@@ -33,11 +33,11 @@
    1. 实现 vertex/edge 生成 snapshot 保存到 k8s的 Persistent Volume 并将图的 metadata 保存到 etcd 中。
    2. 使 computer 支持直接从 k8s的 Persistent Volume 中 recovery vertex/edge snapshot，并跳过数据分片和从 `hugegraph-server` 中拉取数据的过程。
    3. 完成 k8s operator 和 API 调用的相关适配。
-   4. 完成相关UT和CI。
+   4. 完成相关单元测试 UT 和 CI。
 - 技术要求：
    1. 熟悉分布式计算（图计算更佳）
-   2. 熟悉图数据库, hugegraph 更佳, 或熟悉 k8s 相关使用知识
-   3. 具备 java 研发能力, Linux 使用
+   2. 熟悉图数据库, 熟悉 hugegraph 更佳, 或熟悉 k8s 相关使用知识
+   3. 具备 java 研发能力, 熟悉 Linux 基本使用
 
 难度: 进阶
 
