@@ -66,11 +66,13 @@ PS: python client 已经在路上
 
 ### 6. 分布式存储适配与改进
 - 描述:
-随着HugeGraph分布式的推进，HugeServer逐渐演变为纯服务节点。而存储主要由Pd(Placement Driver)和StoreNode来完成。Pd作为整个集群的管理调度节点，提供了服务注册、元数据存储与监听、分区管理等功能。存储集群会由若干个存储节点(StoreNode)组成，提供了按分区写入和读取数据的能力，并且支持水平扩展。本提案需要实现HugeServer与Pd、StoreNode的集成
+随着HugeGraph 分布式存储的演进，HugeServer 逐渐演变为纯服务节点。而存储主要由PD (Placement Driver)和StoreNode来完成。PD 作为整个集群的管理调度节点，提供了服务注册、元数据存储与监听、分区管理等功能。存储集群会由若干个存储节点(StoreNode)组成，提供了按分区写入和读取数据的能力，并且支持水平扩展。本提案需要实现HugeServer与Pd、StoreNode的集成
 - 产出标准:
-   1. HugeServer、hubble实现向pd的服务注册
+   1. HugeGraph Server + Hubble 实现向 pd 的服务注册
    2. 图相关的元数据信息、任务信息存储到pd中，并且根据需要实现对key的监听
-   3. 后端适配，实现数据的写入与查询。使用切边法，实现按顶点、出边、入边和索引按分区写入存储后端，实现按顶点或边ID到对应的StoreNode中查询数据
+   3. 后端适配，实现数据的写入与查询。
+     - 使用切边法，实现按顶点、出边、入边和索引按分区写入存储后端
+     - 实现按顶点或边ID到对应的StoreNode中查询数据
    4. 完善相关单元测试 + 文档
 
 - 技术要求:
@@ -78,5 +80,4 @@ PS: python client 已经在路上
   2. 熟悉kv存储与key监听
   3. 具备java研发能力，熟悉linux使用
 
-- 适配PD?
-- 改进Store?
+难度: 进阶
