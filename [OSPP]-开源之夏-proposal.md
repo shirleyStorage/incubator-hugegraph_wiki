@@ -1,8 +1,6 @@
 # 前言
 
 > 大家可以在此按章节, 每个 proposal 一个单独的说明, 内容和大体格式参考[官方PDF](https://github.com/apache/incubator-hugegraph/files/11208510/diff_mix.pdf)说明
-> 例如:
-![image](https://user-images.githubusercontent.com/17706099/233821125-31ae6d1a-7ec1-4d20-90d6-9945eea88739.png)
 
 
 ### 1. Spark Connector (toolchain)
@@ -101,8 +99,8 @@ PS: python client 已经在路上
    1. HugeGraph-Server + Hubble 实现向 PD 的服务注册。
    2. 图相关的元数据信息、任务信息存储到 PD 中，并且根据需要实现对 Key 的监听。
    3. 进行分布式后端存储的适配，实现数据的写入与查询。
-     - 使用切边法，实现按顶点、出边、入边和索引按分区写入存储后端。
-     - 实现按顶点或边ID到对应的StoreNode中查询数据。
+      - 使用切边法，实现按顶点、出边、入边和索引按分区写入存储后端。
+      - 实现按顶点或边ID到对应的StoreNode中查询数据。
    4. 完善相关的单元测试、使用文档、设计文档。
 
 - 技术要求:
