@@ -22,7 +22,7 @@
 
 难度: 进阶
 
-发起人: @simon824  (重要紧急)
+负责人: @simon824(重要紧急)
 
 
 ### 2. Computer support loading from vertex/edge snapshot
@@ -44,7 +44,7 @@
 
 难度: 进阶
 
-发起人: @coderzc (重要不紧急)
+负责人: @coderzc
 
 
 ### 3. 图引擎 Query 内存管理
@@ -64,7 +64,8 @@
    2. 熟悉内存生命周期管理。
 
 难度: 进阶
-发起人: @javeme  (重要不紧急, 工作量大)
+
+负责人: @javeme
 
 ### 4. 性能优化
 
@@ -87,11 +88,13 @@
 
 难度: 进阶 (单个抽出则为普通)
 
+负责人: @imbajin
+
 ### 5. Go/Xx Client
 
-> 需求度? 不同语言 discussion 投票 (必要不紧急)
+> 需求度? 不同语言 discussion 投票
 
-PS: python client 已经在路上
+PS: python client 已有在路上
 
 ### 6. 分布式存储适配与改进
 
