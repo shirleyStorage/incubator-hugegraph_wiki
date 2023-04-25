@@ -90,13 +90,7 @@
 
 负责人: @imbajin
 
-### 5. Go/Xx Client
-
-> 需求度? 不同语言 discussion 投票
-
-PS: python client 已有在路上
-
-### 6. 分布式存储适配与改进
+### 5. 分布式存储适配与改进
 
 - 描述:
 
@@ -116,3 +110,10 @@ PS: python client 已有在路上
   3. 具备 java 研发能力。
 
 难度: 进阶
+
+
+### 6. Go/Xx Client (暂未进入本次规划)
+
+> 需求度? 不同语言 discussion 投票
+
+PS: python client 已有在路上
