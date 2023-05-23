@@ -4,7 +4,7 @@
 
 - 先确认准备工作/配置文件等做完, 然后再开始修改调整, 此时可以一举多得, 同时调整多个部分, 效率高许多
   - 首先导入 IDEA 专属  [hugegraph-style.xml](https://github.com/apache/incubator-hugegraph/blob/master/hugegraph-style.xml) code style 配置 (**务必**)
-  - 检查"Auto Import" 选项, 确保 "Add * on the fly" + "Optimize * on the fly" 开启✓
+  - 检查"Auto Import" 选项, 确保 "Add on the fly" + "Optimize on the fly" 开启✓
   - IDEA 设置中新建 "Copyright Profile", 复制社区 license header 注释文本配置后, 先单文件/小范围测试再铺开到模块级别
     - 请在 "Formatting" 配置中确认**不同类型**的文件的**注释**格式 (例如 Java/JS/Shell/SQL/XML 等, 勿直接使用默认值, 以**社区对应类型文件**作为参考标准确认)
   - 请注意配置 IDEA 的 "**Actions on save**" 功能, 可一次在(自动)保存文件时做多个件事 (但仍需再次检查)
