@@ -19,10 +19,9 @@
 ## 第二步: 代码 clean
 
 - 基本的格式化 + clean 工作 (使用 IDEA 插件辅助, **模块 --> 项目**级别右键 `Reformat Code/Analyze Code`等)
-  - 修改完包名之后的 import 顺序 (若 Step1 已做, 则此处只需再次检查即可)
+  - 确认包名 import 顺序正确 (若 Step1 已做, 则此处只需再次检查即可)
   - 基本的换行/align 的问题 (同上, 使用[ hugegraph-style.xml](https://github.com/apache/incubator-hugegraph/blob/master/hugegraph-style.xml) 进行批量格式化)
-  - 删除**无用的/过时**的代码 (确认不再需要的)
-  - 处理 code 规范中明显不合规的部分,  **强烈建议**优先使用 IDEA 的 `Code | Analyze Code | Run Inspection by name` 一键处理
+  - 处理 code 规范中明显**不合规**的部分,  **强烈建议**优先使用 IDEA 的 `Code | Analyze Code | Run Inspection by name` 一键处理
     - if/while/for 缺括号
     - missing override
     - Explicit type can be replaced with '<>' 
@@ -30,4 +29,5 @@
   - 删除社区不需要的文件 (包括内部文件)
   - 删除空文件/空文件夹等 (脚本检查)
   - 关键功能/路径**缺乏测试 / 缺乏文档 / 需要重构**的, 需要在类开头加上 "TODO: need test/doc/refactor" 等标识字样
+  - 删除**无用的/过时**的代码 (确认不再需要的, 谨慎不确定的可以标记"TODO")
   - 其他基本的明显影响阅读/合并的问题 etc.
