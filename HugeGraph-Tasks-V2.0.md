@@ -1,7 +1,9 @@
 > For Students & 开源之夏扩展的完整版本, 开源之夏原有议题不受影响, 这边是全新扩展出的更多任务, 随时更新ing
 >  **注:** 开始任务前, 请**务必**先使用 + 阅读一下已有的 HugeGraph 相关文档/文章/Slide (参考[资料](https://github.com/apache/incubator-hugegraph-doc/issues/207)), 把主流程和背景大概清楚后, 再开始阅读源码
 
-下列任务基本都位于 [Server](github.com/apache/hugegraph) 主仓库 (github.com/apache/hugegraph), 基本都是核心的**数据结构/存储结构/性能优化/新增功能/分布式存储**这几块, 不同于开源之夏 [OSPP](https://summer-ospp.ac.cn/org/orgdetail/ec8b597b-248f-4592-bd1c-be22e52a5654?lang=zh) 列表中已有的任务, 下面的所有任务(不包括进阶要求)都是有大量的已有源码 + 设计文档可参考的, 大幅降低了参与的门槛 + 难度/工作量, 并给出了每个任务的评估难度/工作量等, 大家可根据个人情况灵活选择
+下列任务基本都位于 [Server](github.com/apache/hugegraph) 主仓库 (github.com/apache/hugegraph), 基本都是核心的**数据结构/存储结构/性能优化/新增功能/分布式存储**这几块, 不同于开源之夏 [OSPP](https://summer-ospp.ac.cn/org/orgdetail/ec8b597b-248f-4592-bd1c-be22e52a5654?lang=zh) 列表已有的任
+
+下面新增的所有任务(不包括进阶要求)都是有**大量**的已有源码 + 设计文档可参考的, 大幅降低了参与的门槛 + 难度/工作量, 并给出了每个任务的评估难度/工作量等, 大家可根据个人情况灵活选择
 
 **任务参与方式**: (OSPP 已经不允许再新增/修改任何 Task)
 
