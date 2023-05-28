@@ -8,7 +8,7 @@ Currently, it will redirect to here (move it later)
 - [Readme before doing apache release](https://github.com/apache/incubator-hugegraph/wiki/Apache%E5%8F%91%E7%89%88%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9)
 - [The configuration for HugeGraph in IDEA (BETA-CN)](https://github.com/apache/incubator-hugegraph/wiki/The-configuration-for-HugeGraph-in-IDEA-(BETA))
 - [[OSPP] 2023开源之夏](https://github.com/apache/incubator-hugegraph/wiki/%5BOSPP%5D-%E5%BC%80%E6%BA%90%E4%B9%8B%E5%A4%8F-proposal)
-- [[CCF & HugeGraph Task] 2023 开源之夏 V2.0 新增 Task - BETA]()
+- [[CCF & HugeGraph Task] 2023 开源之夏 V2.0 新增 Task - BETA](https://github.com/apache/incubator-hugegraph/wiki/HugeGraph-Tasks-V2.0)
 
 
 
