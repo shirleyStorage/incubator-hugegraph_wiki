@@ -158,7 +158,7 @@ HugeGraph 原本的边设计存储结构可参考已有[文档](https://github.c
 
 **背景:**
 
-HugeGraph 现在主要的查询语言 Gremlin 源自图查询语言框架 [Tinkerpop](), 它的 OLTP 查询基本都是使用的"**单线程 + DFS**"的查询方式, 自然在复杂的查询中就会显著遇到瓶颈, 业内有阿里的 [GAIA: A System for Interactive Analysis on Distributed Graphs Using a High-Level Language](http://imbajin.com/2021-10-14-Gremlin%E5%B9%B6%E8%A1%8C%E8%AE%A1%E7%AE%97%E7%B3%BB%E7%BB%9FGAIA%E8%AE%BA%E6%96%87%E4%BA%8C/) 论文对这个问题进行了深入的探讨和重构, 我们需要**部分**实现图 Gremlin 查询的并行化
+HugeGraph 现在主要的查询语言 Gremlin 源自图查询语言框架 [Tinkerpop](), 它的 OLTP 查询基本都是使用的"**单线程 + DFS**"的查询方式, 自然在复杂的查询中就会显著遇到瓶颈, 业内有阿里的 [GAIA: A System for Interactive Analysis on Distributed Graphs Using a High-Level Language](https://www.usenix.org/system/files/nsdi21-qian.pdf) 论文对这个问题进行了深入的探讨和重构, 我们需要**部分**实现图 Gremlin 查询的并行化
 
 **核心任务:**
 
