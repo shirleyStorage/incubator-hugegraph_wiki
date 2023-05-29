@@ -17,11 +17,11 @@
 
 注: 因与 OSPP 官方沟通后, 平台已经不允许再新增/修改任何 Task, 所以目前先考虑这两种方式, 有更好的方式或者平台提交任务可随时告知
 
-#### 0. 分布式存储的 2.0 大融合
+## 0. 分布式存储的 2.0 大融合
 
 在之前开源之夏的分布式存储任务[基础](https://summer-ospp.ac.cn/org/prodetail/23ec80344?list=org&navpage=org)上, 诚邀熟悉`分布式存储/RocksDB/LSM` 的同学参与其他相关任务, 这里会持续更新拆分 (或是有意报名 OSPP 项目担心落选的同学也可联系)
 
-#### 1. Server 图存储优化与元信息独立化
+## 1. Server 图存储优化与元信息独立化
 
 **背景:**
 
@@ -59,7 +59,7 @@ HugeGraph 之前的元信息是存储在第三方的存储组件中, 没有单�
 
 **Bonus:** 8k/10k (核心/全部完成)
 
-#### 2. 边(Edge)的数据结构增强 (父子边)
+## 2. 边(Edge)的数据结构增强 (父子边)
 
 **背景:**
 
@@ -89,7 +89,7 @@ HugeGraph 原本的边设计存储结构可参考已有[文档](https://github.c
 
 **Bonus:** 3k (完成进阶项则奖金**翻倍**)
 
-#### 3/4. 图 OLTP 算法的增强与优化
+## 3/4. 图 OLTP 算法的增强与优化
 
 **背景:**
 
@@ -119,7 +119,7 @@ HugeGraph 原本的边设计存储结构可参考已有[文档](https://github.c
 
 **Bonus:** 3k/8k (完成基础/进阶任务)
 
-#### 5. 图 `CondtionQuery` 条件/索引查询优化
+## 5. 图 `CondtionQuery` 条件/索引查询优化
 
 **背景:**
 
@@ -145,7 +145,7 @@ HugeGraph 原本的边设计存储结构可参考已有[文档](https://github.c
 
 **Bonus:** 3k
 
-#### 5. 图 Gremlin 的查询并行优化
+## 6. 图 Gremlin 的查询并行优化
 
 **背景:**
 
@@ -181,7 +181,7 @@ HugeGraph 现在主要的查询语言 Gremlin 源自图查询语言框架 [Tinke
 
 **注:** 进阶项任务难度上升至 5 星⭐, 工作量上升至 4 星⭐, 建议感兴趣的同学先阅读一下论文看看理解情况.
 
-#### 6. 图的监控和性能观测优化
+## 7. 图的监控和性能观测优化
 
 *补充 ing*
 
@@ -191,7 +191,7 @@ HugeGraph 现在主要的查询语言 Gremlin 源自图查询语言框架 [Tinke
 - 按照图名称、接口名称计算请求总数、成功数、失败数、平均响应时间、最大响应时间 (接口返回格式兼容 `Prometheus` 即可)
 - 增加白名单监控信息
 
-#### 7. 图功能优化 & 支持子图功能
+## 8. 图功能优化 & 支持子图功能
 
 *补充 ing*
 
@@ -201,7 +201,7 @@ HugeGraph 现在主要的查询语言 Gremlin 源自图查询语言框架 [Tinke
 - auth Server删除system graph删除更新权限接口增加租户管理员
 - 增加schema模板，创建图空间时，可指定schema模板查询schema groovy格式返回属性改名
 
-#### 8. 图的容器化增强和完善 (SaaS前置任务)
+## 8. 图的容器化增强和完善 (SaaS前置任务)
 
 核心是参考 [docker-issue](https://github.com/apache/incubator-hugegraph/issues/840), 完成 TODO ✅ 项待完成部分
 
@@ -215,7 +215,7 @@ HugeGraph 现在主要的查询语言 Gremlin 源自图查询语言框架 [Tinke
 
 备注: 如果熟悉 k8s, saas 化的同学, 可以完成后承接下一个 K8s/SaaS 化的任务 (独立拆分出来)
 
-#### 9. JanusGraph 的新增功能合入 HugeGraph
+## 9. JanusGraph 的新增功能合入 HugeGraph
 
 **背景:**
 [JanusGraph](https://github.com/JanusGraph/janusgraph)(前身叫`Titan` 算是分布式图存储的第一代奠基), 社区以海外用户为主, 但是整体结构上其实殊途同归, 也同为 Java 语言开发, 和 HugeGrpah 的关系类似 "LevelDB" VS "RocksDB", 所以我们希望推动两个社区的更多的复用和合作, 首先就可以从 JG 的功能 --> HG 开始
@@ -235,7 +235,7 @@ HugeGraph 现在主要的查询语言 Gremlin 源自图查询语言框架 [Tinke
 
 备注: 同时熟悉两个社区结构和设计的同学是最佳, 这部分也是基于已有代码进行适配和优化 
 
-#### 10. HugeGraph 的序列化优化/性能优化
+## 10. HugeGraph 的序列化优化/性能优化
 
 *补充 ing*, 先列一下关键点
 
@@ -249,10 +249,10 @@ HugeGraph 现在主要的查询语言 Gremlin 源自图查询语言框架 [Tinke
 
 **mentor**: zyxxoo/javeme
 
-#### x. 图 Gremlin 的版本升级和新适配
+### x. 图 Gremlin 的版本升级和新适配
 
 *补充 ing*
 
-#### x. 分布式锁与柔性事务的初步实现
+### x. 分布式锁与柔性事务的初步实现
 
 *补充 ing*
