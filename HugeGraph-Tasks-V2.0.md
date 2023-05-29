@@ -209,6 +209,30 @@ HugeGraph 现在主要的查询语言 Gremlin 源自图查询语言框架 [Tinke
 
 备注: 如果熟悉 k8s, saas 化的同学, 可以完成后承接下一个 K8s/SaaS 化的任务 (独立拆分出来)
 
+#### 9. JanusGraph 的新增功能合入 HugeGraph
+
+**背景:**
+[JanusGraph](https://github.com/JanusGraph/janusgraph)(前身叫`Titan` 算是分布式图存储的第一代奠基), 社区以海外用户为主, 但是整体结构上其实殊途同归, 也同为 Java 语言开发, 和 HugeGrpah 的关系类似 "LevelDB" VS "RocksDB", 所以我们希望推动两个社区的更多的复用和合作, 首先就可以从 JG 的功能 --> HG 开始
+
+任务描述:
+
+- 根据已有资料和文档, 梳理最新版 JG 代码新增的功能特性 (比较重要的)
+- 移植核心的 feature/bug-fix 等到 HG 中来
+
+**mentor**: javeme/imbajin
+
+**Difficulty:** middle (2.5星 ⭐)
+
+**Size**: middle (3.5星 ⭐, 需要阅读两边的源码, 调试和适配)
+
+**Bonus:** 3~12k (视合并项/完成数)
+
+备注: 同时熟悉两个社区结构和设计的同学是最佳, 这部分也是基于已有代码进行适配和优化 
+
+#### 10. HugeGraph 的 ByteBuffer/内存碎片优化
+
+*补充 ing*
+
 #### x. 图 Gremlin 的版本升级和新适配
 
 *补充 ing*
