@@ -193,6 +193,20 @@ HugeGraph 现在主要的查询语言 Gremlin 源自图查询语言框架 [Tinke
 - auth Server删除system graph删除更新权限接口增加租户管理员
 - 增加schema模板，创建图空间时，可指定schema模板查询schema groovy格式返回属性改名
 
+#### 8. 图的容器化增强和完善 (SaaS前置任务)
+
+核心是参考 [docker-issue](https://github.com/apache/incubator-hugegraph/issues/840), 完成 TODO ✅ 项待完成部分
+
+**mentor**: coderzc/imbajin
+
+**Difficulty:** low (1.5星⭐)
+
+**Size**: middle (3星 ⭐, 需要调试和测试)
+
+**Bonus:** 3~6k (视 TODO 项完成数)
+
+备注: 如果熟悉 k8s, saas 化的同学, 可以完成后承接下一个 K8s/SaaS 化的任务 (独立拆分出来)
+
 #### x. 图 Gremlin 的版本升级和新适配
 
 *补充 ing*
