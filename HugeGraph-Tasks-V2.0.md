@@ -237,7 +237,7 @@ HugeGraph 现在主要的查询语言 Gremlin 源自图查询语言框架 [Tinke
 
 #### 10. HugeGraph 的序列化优化/性能优化
 
-*补充 ing*
+*补充 ing*, 先列一下关键点
 
 1. 支持高频属性值的常量枚举编码
 2. 增加按需延迟反序列化类BackendProps包裹原始字节
