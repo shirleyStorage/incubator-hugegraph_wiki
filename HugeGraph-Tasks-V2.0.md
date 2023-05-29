@@ -235,9 +235,19 @@ HugeGraph 现在主要的查询语言 Gremlin 源自图查询语言框架 [Tinke
 
 备注: 同时熟悉两个社区结构和设计的同学是最佳, 这部分也是基于已有代码进行适配和优化 
 
-#### 10. HugeGraph 的 ByteBuffer/内存碎片优化
+#### 10. HugeGraph 的序列化优化/性能优化
 
 *补充 ing*
+
+1. 支持高频属性值的常量枚举编码
+2. 增加按需延迟反序列化类BackendProps包裹原始字节
+3. 序列化将各bytes替换为bytebuffer减少碎片
+4. 堆外内存优化gremlin dedup/emit等等step
+5. 邻接边的缓存结构更加精细化，比如以顶点Id为key，增加命中率
+6. 优化带目标点id条件的邻接边查询
+7. 优化根据顶点查边时，如果顶点类型无该类型边则直接返回空
+
+**mentor**: zyxxoo/javeme
 
 #### x. 图 Gremlin 的版本升级和新适配
 
