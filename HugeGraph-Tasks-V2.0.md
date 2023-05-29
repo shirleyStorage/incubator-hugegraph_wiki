@@ -106,7 +106,7 @@ HugeGraph 原本的边设计存储结构可参考已有[文档](https://github.c
 
   **关键描述:** 
 
-  - 所有 OLTP 算法 API 支持顶点和边的属性**过滤** (减少不必要的图搜索 + 返回数据量大小)
+  - 所有 OLTP 算法 API 支持顶点和边的属性**过滤** (减少不必要的图搜索 + 返回数据量大小)
   - 所有 OLTP 算法 API 支持顶点和边**完整信息**跳过/返回 (当前版本仅返回点边id, 或部分属性)
   - 所有接口返回中增加 statistic 统计信息（例如: 遍历的顶点、边数量和**耗时**）
 
@@ -199,30 +199,63 @@ HugeGraph 现在主要的查询语言 Gremlin 源自图查询语言框架 [Tinke
 - 增加 `arthas server` 内嵌服务接口 (也就是说启动 HG Server 后可以直接使用 Arthas 动态观测/perf/debug, 无需单独安装)
 - 按照图名称、接口名称计算请求总数、成功数、失败数、平均响应时间、最大响应时间 (接口返回格式兼容 `Prometheus` 即可)
 - 增加白名单监控信息
+- Slow query 慢查询/慢日志的实现, 类似传统 DB 帮助用户能及时发现查询中的慢语句并方便分析溯源 (**进阶**项, 暂无参考)
+
+**mentor**: liu / 待定
+
+**Difficulty:** low (1.5 星⭐)
+
+**Size**: medium (3星 ⭐, 已有 **8成**源码实现)
+
+**Bonus:** 3k/6k (完成基础/进阶)
 
 ## 8. 图功能优化 & 支持子图功能
 
 *补充 ing*
 
-任务描述:
+**任务描述:**
 
-- 按照顶点和边label和属性过滤生成一张子图增加子图Job
+- 子图(subgraph) 简单可以理解为全图的任一部分, 这里我们需要按照"**顶点 + 边label + 属性**"过滤生成一张子图, 增加子图 Job
 - auth Server删除system graph删除更新权限接口增加租户管理员
 - 增加schema模板，创建图空间时，可指定schema模板查询schema groovy格式返回属性改名
 
+**mentor**: zgx
+
+**Difficulty:** medium (3 星⭐)
+
+**Size**: medium (3.5星 ⭐, 已有 **7成**源码实现)
+
+**Bonus:** 8k (完成基础/进阶)
+
 ## 9. 图的容器化增强和完善 (SaaS前置任务)
 
-核心是参考 [docker-issue](https://github.com/apache/incubator-hugegraph/issues/840), 完成 TODO ✅ 项待完成部分
+**任务描述:**
+
+核心是参考已有的 [docker-issue](https://github.com/apache/incubator-hugegraph/issues/840), 完成 TODO ✅ 项待完成部分, 更好的让用户和开发者能使用 HugeGraph, 以及为后续的云(SaaS)化做铺垫
+
+-  use [docker-slim](https://github.com/docker-slim/docker-slim) to slim the image
+-  keep the tags same with server (like `hugegraph/hugegraph:1.0.0`)
+-  use a script to run server & hubble together OR use docker-compose to manage them
+-  pre-load some data or graphs in container so that users can traverse the graph with one step (docker run)
+-  use dockerhub(autobuild), currently it's not free to use (Submit a OSS request)
+- support Cassandra(Docker) as backend (compose with HugeGraph)
+
+**技能要求:**
+
+1. 熟悉 HugeGraph 的**编译/运行**流程, 熟悉基本的初始化/启动过程
+2. 会使用/阅读 `Shell`, 需要熟悉 `Docker` 使用, 能编写 `Dockerfile` 更佳
+3. 了解 Docker-Compose/K8s 更佳 (加分项)
+4. 需要有较强的问题分析解决能力 (容器相关问题需要定位)
 
 **mentor**: coderzc/imbajin
 
 **Difficulty:** low (1.5星⭐)
 
-**Size**: middle (3星 ⭐, 需要调试和测试)
+**Size**: middle (3星 ⭐, 需要调试和测试 Docker)
 
-**Bonus:** 3~6k (视 TODO 项完成数)
+**Bonus:** 2~5k (视 TODO 项完成数)
 
-备注: 如果熟悉 k8s, saas 化的同学, 可以完成后承接下一个 K8s/SaaS 化的任务 (独立拆分出来)
+**备注:** 如果熟悉 k8s, saas 化的同学, 可以完成后承接下一个 `K8s/SaaS` 化的任务 (会独立拆分出来, bonus 单独为 **12k+**)
 
 ## 10. JanusGraph 的新增功能合入 HugeGraph
 
@@ -231,8 +264,10 @@ HugeGraph 现在主要的查询语言 Gremlin 源自图查询语言框架 [Tinke
 
 任务描述:
 
-- 根据已有资料和文档, 梳理最新版 JG 代码新增的功能特性 (比较重要的)
-- 移植核心的 feature/bug-fix 等到 HG 中来
+- 根据已有资料和文档, 梳理最新版 `JanusGraph` 代码新增的功能特性 (比较重要的)
+- 梳理出核心特性上的区别, 整理为文档, 参与 `HG X JG` 社区联合沟通
+- 移植核心的 `feature/bug-fix` 等到 HG 中来, 能改进则更佳
+- 有良好的英语表达能力, 能在有稿子 + Slide 的前提下, 进行简单的分享与 QA (**进阶**)
 
 **mentor**: javeme/imbajin
 
@@ -240,9 +275,9 @@ HugeGraph 现在主要的查询语言 Gremlin 源自图查询语言框架 [Tinke
 
 **Size**: middle (3.5星 ⭐, 需要阅读两边的源码, 调试和适配)
 
-**Bonus:** 3~12k (视合并项/完成数)
+**Bonus:** 3~12k (视完成度/合并数)
 
-备注: 同时熟悉两个社区结构和设计的同学是最佳, 这部分也是基于已有代码进行适配和优化 
+**注:** 同时熟悉两个社区结构和设计的同学是最佳, 这部分也是基于已有代码进行适配和优化
 
 ## 11. HugeGraph 的序列化优化/性能优化
 
@@ -256,15 +291,25 @@ HugeGraph 现在主要的查询语言 Gremlin 源自图查询语言框架 [Tinke
 6. 优化带目标点id条件的邻接边查询
 7. 优化根据顶点查边时，如果顶点类型无该类型边则直接返回空
 
-**mentor**: zyxxoo/javeme
+**mentor**: zyxxoo/javeme/待定
+
+**Difficulty:** middle (2~3.5星 ⭐)
+
+**Size**: middle (1~3.5星 ⭐, 根据 task 不同)
+
+**Bonus:** 2~12k (视完成度/合并数)
 
 ### x. 图 Gremlin 的版本升级和新适配
 
 *补充 ing*
 
+**背景:**
+
+目前 HugeGraph 使用的是 `3.5.1` 的 TinkerPop, 最新稳定版本是 `3.6.x`, 修复了大量 `Gremlin`查询的 Bug, 优化了不少 perf/api 相关的优化, 所以 HugeGraph 需要能适配升级到新的 `Gremlin` 版本, 并梳理出主要的变化和提升对比
+
 ### x. 分布式锁与柔性事务的初步实现
 
-*补充 ing*
+*补充 ing* 
 
 ## FAQ (其他)
 
