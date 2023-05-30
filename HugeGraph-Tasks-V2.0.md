@@ -202,6 +202,7 @@ HugeGraph 现在主要的查询语言 Gremlin 源自图查询语言框架 [Tinke
 - 按照图名称、接口名称计算请求总数、成功数、失败数、平均响应时间、最大响应时间 (接口返回格式兼容 `Prometheus` 即可)
 - 增加白名单监控信息
 - Slow query 慢查询/慢日志的实现, 类似传统 DB 帮助用户能及时发现查询中的慢语句并方便分析溯源 (**进阶**项, 暂无参考)
+- 为 computer 增加 mertics 端点并返回 Jvm mertics/compute 耗时/input 耗时/output 耗时 等(**进阶**项)
 
 **mentor**: liu / 待定
 
@@ -270,6 +271,7 @@ RocksDB 作为 HugeGraph 未来主要的单机/分布式后端存储底座(存�
 -  use [docker-slim](https://github.com/docker-slim/docker-slim) to slim the image
 -  keep the tags same with server (like `hugegraph/hugegraph:1.0.0`)
 -  use a script to run server & hubble together OR use docker-compose to manage them
+-  use docker-compose to manage computer, it need to contain `etcd` and `hugegraph-server`
 -  pre-load some data or graphs in container so that users can traverse the graph with one step (docker run)
 -  use DockerHub(autobuild), currently it's not free to use (Submit a OSS request)
 - support Cassandra(Docker) as backend (compose with HugeGraph)
