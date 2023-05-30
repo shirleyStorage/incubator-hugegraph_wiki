@@ -202,7 +202,7 @@ HugeGraph 现在主要的查询语言 Gremlin 源自图查询语言框架 [Tinke
 - 按照图名称、接口名称计算请求总数、成功数、失败数、平均响应时间、最大响应时间 (接口返回格式兼容 `Prometheus` 即可)
 - 增加白名单监控信息
 - Slow query 慢查询/慢日志的实现, 类似传统 DB 帮助用户能及时发现查询中的慢语句并方便分析溯源 (**进阶**项, 暂无参考)
-- 为 computer 增加 mertics 端点并返回 Jvm mertics/compute 耗时/input 耗时/output 耗时 等(**进阶**项)
+- 为 computer 增加 mertics 端点并返回 JVM mertics/compute 耗时(master&worker)/input 耗时(master&worker)/output 耗时(master&worker) 等 (**进阶**项)
 
 **mentor**: liu / 待定
 
