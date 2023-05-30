@@ -223,13 +223,13 @@ RocksDB 作为 HugeGraph 未来主要的单机/分布式后端存储底座(存�
 - 根据代码/文档/slide, 分析 `RocksDB Plus` 的数据结构优化和改进点
 - HugeGraph 适配 `RocksDB Plus`, 类似提供一个进阶选择 (同时保持对 `RocksDB` 兼容)
 - 编写基本的 perf 代码, 能进行简单性能测试和对比 (可借助 `loader/jmeter` 等压测工具)
-- 帮助 HugeGraph 的 CI 中加入 `perf `部分, 这样每次 CI 运行都能有一个 perf 情况对比分析, 观测**读写性能**影响, 可参考业内做法 (**加分项**)
+- 帮助 HugeGraph 的 CI 中加入 `perf `部分, 这样每次 CI 运行都能有一个 perf 情况对比分析, 观测**读写性能**影响, 可参考业内做法 (**加分项**)
 
 **技能要求:**
 
 1. 熟悉 HugeGraph 的**编译/运行**流程, 熟悉 rocksdb 后端的**初始化/启动**完整过程
 2. 熟悉 `Java/Linux` 编程, 了解/可阅读 `C++/Makefile/JNI`更佳
-3. 了解 `BTree/LSM/SkipList/Trie Tree` 至少 1~2 种数据结构设计, 了解文件存储/编码压缩更佳
+3. 了解 `BTree/LSM/SkipList/Trie Tree` 至少 1~2 种数据结构设计, 了解文件存储/编码压缩更佳
 4. 了解 ` RocksDB/HBase/TiKV` 等存储设计(包括 `memtable/wal/compaction`/LSM读写流程), 熟悉源码更佳
 5. 需要有较强的问题分析解决能力,  了解性能分析/定位方式/火焰图更佳
 
@@ -358,3 +358,7 @@ RocksDB 作为 HugeGraph 未来主要的单机/分布式后端存储底座(存�
 3. 有些 mentor 还是待定或者没有具体的联系方式, 如何沟通?
 
    **A:** 这部分因为部分 mentor 人选可能还有调整, 所以不确定的 mentor 的任务可先联系 [imbajin](https://github.com/imbajin), 或者公众号加学生群, 之后会及时安排更新
+
+4. 已经毕业了, 这部分新增任务可以参与么?
+
+   **A:**  `OSPP/CCF` 限定在校学生, 而属于 **HugeGraph 基金会**渠道的方式都可参与, 不受平台限制
