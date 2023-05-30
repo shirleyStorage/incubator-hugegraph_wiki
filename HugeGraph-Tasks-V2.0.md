@@ -60,7 +60,7 @@ HugeGraph 之前的元信息是存储在第三方的存储组件中, 没有单�
 
 **Difficulty:** middle (3 星⭐)
 
-**Size**: middle (3 星⭐)
+**Size**: middle (3.5 星⭐, 已有 **7成**源码实现)
 
 **Bonus:** 8k/10k (核心/全部完成)
 
@@ -90,7 +90,7 @@ HugeGraph 原本的边设计存储结构可参考已有[文档](https://github.c
 
 **Difficulty:** middle (2.5星⭐)
 
-**Size**: middle (3 星⭐)
+**Size**: middle (3 星⭐, 已有 **8成**源码实现)
 
 **Bonus:** 3k (完成进阶项则奖金**翻倍**)
 
@@ -124,7 +124,7 @@ HugeGraph 原本的边设计存储结构可参考已有[文档](https://github.c
 
 **Difficulty:**  middle (2.5星⭐)
 
-**Size**: middle (2星 ⭐)
+**Size**: middle (2星 ⭐, 已有 **9成**源码实现)
 
 **Bonus:** 3k/8k (完成基础/进阶任务)
 
@@ -150,7 +150,7 @@ HugeGraph 原本的边设计存储结构可参考已有[文档](https://github.c
 
 **Difficulty:**  hard (4星⭐)
 
-**Size**: middle (2星 ⭐)
+**Size**: middle (2星 ⭐, 已有 **9成**源码实现)
 
 **Bonus:** 3k
 
@@ -209,7 +209,39 @@ HugeGraph 现在主要的查询语言 Gremlin 源自图查询语言框架 [Tinke
 
 **Bonus:** 3k/6k (完成基础/进阶)
 
-## 8. 图功能优化 & 支持子图功能
+## 8. 存储引擎 RocksDB 改进与优化
+
+**背景:**
+
+RocksDB 作为 HugeGraph 未来主要的单机/分布式后端存储底座(存储引擎), 因为设计和定位原因(对应 `InnoDB/Myisam`), 所以它自身并不会提供类似完整 Database 那样整套的组件, 甚至也没有命令行工具, 只有裸的 API 调用, 但这样对上层图的调用/性能分析/问题定位等带来了很大的影响, 用户也很难 cover 它, 另外的一个问题是由于之前 `rocksdb-jni`设计上的历史问题, 导致存在大量的胶水配置代码, 使得 HG 修改/新增/调整 RocksDB 的参数, 既不**动态**化, 也很不灵活, 有许多 `hard-code`, 综上原因, 我们很需要对原生 `RocksDB` 进行优化, 可供用户选择 `RocksDB Plus`的选择, 从而在"性能 + 功能 + 易用性"各方面实现提升
+
+任务描述:
+
+- 根据已有资料和文档, 梳理 `RocksDB` 存在的局限性和不足
+- 根据代码/文档/slide, 分析 `RocksDB Plus` 的数据结构优化和改进点
+- HugeGraph 适配 `RocksDB Plus`, 类似提供一个进阶选择 (同时保持对 `RocksDB` 兼容)
+- 编写基本的 perf 代码, 能进行简单性能测试和对比 (可借助 `loader/jmeter` 等压测工具)
+- 帮助 HugeGraph 的 CI 中加入 `perf `部分, 这样每次 CI 运行都能有一个 perf 情况对比分析, 观测**读写性能**影响, 可参考业内做法 (**加分项**)
+
+**技能要求:**
+
+1. 熟悉 HugeGraph 的**编译/运行**流程, 熟悉 rocksdb 后端的**初始化/启动**完整过程
+2. 熟悉 `Java/Linux` 编程, 了解/可阅读 `C++/Makefile/JNI`更佳
+3. 了解 `BTree/LSM/SkipList/Trie Tree` 至少 1~2 种数据结构设计, 了解文件存储/编码压缩更佳
+4. 了解 ` RocksDB/HBase/TiKV` 等存储设计(包括 `memtable/wal/compaction`/LSM读写流程), 熟悉源码更佳
+5. 需要有较强的问题分析解决能力, 记录文档, 较好的沟通能力
+
+**mentor**: imbajin + lp
+
+**Difficulty:** middle (3.5星 ⭐)
+
+**Size**: middle (3星 ⭐, 需调试和适配, 已有 6 成代码参考)
+
+**Bonus:** 4~10k (视完成度/加分项)
+
+**注:** 此任务也是 OSPP [并发集合](https://summer-ospp.ac.cn/org/prodetail/23ec80364?list=org&navpage=org)优化的同类, 与并发集合中的加分项直接关联 (但并不绑定)
+
+## 9. 图功能优化 & 支持子图功能
 
 *补充 ing*
 
@@ -223,11 +255,11 @@ HugeGraph 现在主要的查询语言 Gremlin 源自图查询语言框架 [Tinke
 
 **Difficulty:** medium (3 星⭐)
 
-**Size**: medium (3.5星 ⭐, 已有 **7成**源码实现)
+**Size**: medium (3星 ⭐, 已有 **8成**源码实现)
 
-**Bonus:** 8k (完成基础/进阶)
+**Bonus:** 3 ~ 8k (完成部分/全部)
 
-## 9. 图的容器化增强和完善 (SaaS前置任务)
+## 10. 图的容器化增强和完善 (SaaS前置任务)
 
 **任务描述:**
 
@@ -237,7 +269,7 @@ HugeGraph 现在主要的查询语言 Gremlin 源自图查询语言框架 [Tinke
 -  keep the tags same with server (like `hugegraph/hugegraph:1.0.0`)
 -  use a script to run server & hubble together OR use docker-compose to manage them
 -  pre-load some data or graphs in container so that users can traverse the graph with one step (docker run)
--  use dockerhub(autobuild), currently it's not free to use (Submit a OSS request)
+-  use DockerHub(autobuild), currently it's not free to use (Submit a OSS request)
 - support Cassandra(Docker) as backend (compose with HugeGraph)
 
 **技能要求:**
@@ -257,7 +289,7 @@ HugeGraph 现在主要的查询语言 Gremlin 源自图查询语言框架 [Tinke
 
 **备注:** 如果熟悉 k8s, saas 化的同学, 可以完成后承接下一个 `K8s/SaaS` 化的任务 (会独立拆分出来, bonus 单独为 **12k+**)
 
-## 10. JanusGraph 的新增功能合入 HugeGraph
+## 11. JanusGraph 的新增功能合入 HugeGraph
 
 **背景:**
 [JanusGraph](https://github.com/JanusGraph/janusgraph)(前身叫`Titan` 算是分布式图存储的第一代奠基), 社区以海外用户为主, 但是整体结构上其实殊途同归, 也同为 Java 语言开发, 和 HugeGrpah 的关系类似 "LevelDB" VS "RocksDB", 所以我们希望推动两个社区的更多的复用和合作, 首先就可以从 JG 的功能 --> HG 开始
@@ -279,7 +311,7 @@ HugeGraph 现在主要的查询语言 Gremlin 源自图查询语言框架 [Tinke
 
 **注:** 同时熟悉两个社区结构和设计的同学是最佳, 这部分也是基于已有代码进行适配和优化
 
-## 11. HugeGraph 的序列化优化/性能优化
+## 12. HugeGraph 的序列化优化/性能优化
 
 *补充 ing*, 先列一下关键点
 
