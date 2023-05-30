@@ -1,6 +1,6 @@
 > For Students & 开源之夏扩展的完整版本, 开源之夏原有任务不受影响, 这边是全新扩展出的更多任务, 随时更新ing
 >
-> **注:** 开始任务前, 请**务必**先使用 + 阅读一下已有的 HugeGraph 相关文档/文章/Slide (参考[资料](https://github.com/apache/incubator-hugegraph-doc/issues/207)), 把主流程和背景大概清楚后, 再开始阅读源码
+> **注:** 开始任务前, 请**务必**先使用 + 阅读一下已有的 HugeGraph 相关[文档](https://github.com/apache/incubator-hugegraph/issues/2212)/文章/Slide (参考[资料](https://github.com/apache/incubator-hugegraph-doc/issues/207)), 把主流程和背景大概清楚后, 再开始阅读源码
 
 # 必读部分
 
@@ -357,4 +357,4 @@ RocksDB 作为 HugeGraph 未来主要的单机/分布式后端存储底座(存�
 
 3. 有些 mentor 还是待定或者没有具体的联系方式, 如何沟通?
 
-   **A:** 这部分因为部分 mentor 人选可能还有调整, 所以不确定的 mentor 的任务可先联系 [imbajin](https://github.com/imbajin), 或者公众号加学生群, 之后会及时安排更新
+   **A:** 这部分因为部分 mentor 人选可能还有调整, 所以不确定的 mentor 的任务可先联系 [imbajin](https://github.com/imbajin), 或者公众号加学生群, 之后会及时安排更新
