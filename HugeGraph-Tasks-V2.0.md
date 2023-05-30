@@ -26,6 +26,8 @@
 
 在之前开源之夏的分布式存储任务[基础](https://summer-ospp.ac.cn/org/prodetail/23ec80344?list=org&navpage=org)上, 诚邀熟悉`分布式存储/RocksDB/LSM` 的同学参与其他相关任务, 这里会持续更新拆分 (或是有意报名 OSPP 对应项目担心落选的同学也可联系报名)
 
+**mentor**: [simon](https://github.com/simon824) / zyj
+
 ## 1. Server 图存储优化与元信息独立化
 
 **背景:**
@@ -56,7 +58,7 @@ HugeGraph 之前的元信息是存储在第三方的存储组件中, 没有单�
 2. 了解分布式系统中 MetaServer/PD 的设计作用和基本通信方式, 熟悉 etcd/zookeeper/RPC 更佳
 3. 需要有较强的**源码阅读** + 问题分析/解决能力 (任务已有**大量**源码实现可参考/复用, 亦有基本的设计文档)
 
-**mentor**: imbajin
+**mentor**: [imbajin](https://github.com/imbajin)
 
 **Difficulty:** middle (3 星⭐)
 
@@ -231,7 +233,7 @@ RocksDB 作为 HugeGraph 未来主要的单机/分布式后端存储底座(存�
 4. 了解 ` RocksDB/HBase/TiKV` 等存储设计(包括 `memtable/wal/compaction`/LSM读写流程), 熟悉源码更佳
 5. 需要有较强的问题分析解决能力,  了解性能分析/定位方式/火焰图更佳
 
-**mentor**: imbajin + lp
+**mentor**: [imbajin](https://github.com/imbajin) + lp
 
 **Difficulty:** middle (3.5星 ⭐)
 
@@ -279,7 +281,7 @@ RocksDB 作为 HugeGraph 未来主要的单机/分布式后端存储底座(存�
 3. 了解 Docker-Compose/K8s 更佳 (加分项)
 4. 需要有较强的问题分析解决能力 (容器相关问题需要定位)
 
-**mentor**: coderzc/imbajin
+**mentor**: [coderzc](https://github.com/coderzc)/[imbajin](https://github.com/imbajin)
 
 **Difficulty:** low (1.5星⭐)
 
@@ -301,7 +303,7 @@ RocksDB 作为 HugeGraph 未来主要的单机/分布式后端存储底座(存�
 - 移植核心的 `feature/bug-fix` 等到 HG 中来, 能改进则更佳
 - 有良好的英语表达能力, 能在有稿子 + Slide 的前提下, 进行简单的分享与 QA (**进阶**)
 
-**mentor**: javeme/imbajin
+**mentor**: [javeme](https://github.com/javeme)/[imbajin](https://github.com/imbajin)
 
 **Difficulty:** middle (2.5星 ⭐)
 
@@ -323,7 +325,7 @@ RocksDB 作为 HugeGraph 未来主要的单机/分布式后端存储底座(存�
 6. 优化带目标点id条件的邻接边查询
 7. 优化根据顶点查边时，如果顶点类型无该类型边则直接返回空
 
-**mentor**: zyxxoo/javeme/待定
+**mentor**: [zyxxoo](https://github.com/zyxxoo)/[javeme](https://github.com/javeme)/待定
 
 **Difficulty:** middle (2~3.5星 ⭐)
 
