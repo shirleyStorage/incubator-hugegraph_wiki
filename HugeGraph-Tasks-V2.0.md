@@ -293,7 +293,22 @@ RocksDB 作为 HugeGraph 未来主要的单机/分布式后端存储底座(存�
 
 **备注:** 如果熟悉 k8s, saas 化的同学, 可以完成后承接下一个 `K8s/SaaS` 化的任务 (会独立拆分出来, bonus 单独为 **12k+**)
 
-## 11. JanusGraph 的新增功能合入 HugeGraph
+
+## 11. 重构官网
+
+任务描述:
+
+- 使用 [[Docusaurus](https://docusaurus.io/)](https://docusaurus.io/) 框架重构官网， 具体请参考已有的 https://github.com/apache/incubator-hugegraph-doc/issues/103
+
+**mentor**: coderzc
+
+**Difficulty:** low (1.5 星⭐)
+
+**Size**: medium (3星 ⭐, 需要适配和调试)
+
+**Bonus:** 3k
+
+## 12. JanusGraph 的新增功能合入 HugeGraph
 
 **背景:**
 [JanusGraph](https://github.com/JanusGraph/janusgraph)(前身叫`Titan` 算是分布式图存储的第一代奠基), 社区以海外用户为主, 但是整体结构上其实殊途同归, 也同为 Java 语言开发, 和 HugeGrpah 的关系类似 "LevelDB" VS "RocksDB", 所以我们希望推动两个社区的更多的复用和合作, 首先就可以从 JG 的功能 --> HG 开始
@@ -315,7 +330,7 @@ RocksDB 作为 HugeGraph 未来主要的单机/分布式后端存储底座(存�
 
 **注:** 同时熟悉两个社区结构和设计的同学是最佳, 这部分也是基于已有代码进行适配和优化
 
-## 12. HugeGraph 的序列化优化/性能优化
+## 13. HugeGraph 的序列化优化/性能优化
 
 *补充 ing*, 先列一下关键点
 
