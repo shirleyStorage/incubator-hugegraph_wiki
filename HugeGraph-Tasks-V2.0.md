@@ -300,7 +300,7 @@ RocksDB 作为 HugeGraph 未来主要的单机/分布式后端存储底座(存�
 
 - 使用 [Docusaurus](https://docusaurus.io/) 框架来重构官网， 具体请参考已有的任务 [Refactor the official website](https://github.com/apache/incubator-hugegraph-doc/issues/103)
 
-**mentor**: coderzc
+**mentor**: [coderzc](https://github.com/coderzc)
 
 **Difficulty:** low (1.5 星⭐)
 
