@@ -271,7 +271,7 @@ RocksDB 作为 HugeGraph 未来主要的单机/分布式后端存储底座(存�
 -  use [docker-slim](https://github.com/docker-slim/docker-slim) to slim the image
 -  keep the tags same with server (like `hugegraph/hugegraph:1.0.0`)
 -  use a script to run server & hubble together OR use docker-compose to manage them
--  use docker-compose to manage computer, it need to contain `etcd` and `hugegraph-server`
+-  use docker-compose to manage computer, it needs to contain `etcd` and `hugegraph-server`
 -  pre-load some data or graphs in container so that users can traverse the graph with one step (docker run)
 -  use DockerHub(autobuild), currently it's not free to use (Submit a OSS request)
 - support Cassandra(Docker) as backend (compose with HugeGraph)
