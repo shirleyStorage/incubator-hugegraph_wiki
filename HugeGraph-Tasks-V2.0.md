@@ -130,11 +130,11 @@ HugeGraph 原本的边设计存储结构可参考已有[文档](https://github.c
 
 **Bonus:** 3k/8k (完成基础/进阶任务)
 
-## 5. 图 CondtionQuery 条件/索引查询优化
+## 5. 图 ConditionQuery 条件/索引查询优化
 
 **背景:**
 
-数据库中基本的概念是, 主键之外, **属性**的查询要么需要进行全表扫描, 要么需要建立对应的**(二级)索引**; 在 HugeGraph 中, 图的 `unique` 索引可用于数据查询移除 `NoIndexException`，如未完全命中索引，则可考虑使用某个索引+ConditionQuery.test的方式过滤， 如完全没有索引，则进行全表扫描+ConditionQuery.test方式过滤三种类型A、B、C， A、B建立了基于属性x的索引，当执行 `g.V().has(x, ?)`时，需要查询到A、B索引结果和C的非索引结果
+数据库中基本的概念是, 主键之外, **属性**的查询要么需要进行全表扫描, 要么需要建立对应的 **(二级)索引**; 在 HugeGraph 中, 图的 `unique` 索引可用于数据查询移除 `NoIndexException`，如未完全命中索引，则可考虑使用某个索引+ConditionQuery.test的方式过滤， 如完全没有索引，则进行全表扫描+ConditionQuery.test方式过滤三种类型A、B、C， A、B建立了基于属性x的索引，当执行 `g.V().has(x, ?)`时，需要查询到A、B索引结果和C的非索引结果
 
 **核心任务:**
 
