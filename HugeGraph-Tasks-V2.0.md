@@ -327,7 +327,7 @@ RocksDB 作为 HugeGraph 未来主要的单机/分布式后端存储底座(存�
 6. 优化带目标点id条件的邻接边查询
 7. 优化根据顶点查边时，如果顶点类型无该类型边则直接返回空
 
-**mentor**: [zyxxoo](https://github.com/zyxxoo)/[javeme](https://github.com/javeme)/待定
+**mentor**: [zyxxoo](https://github.com/zyxxoo)/[javeme](https://github.com/javeme)/[coderzc](https://github.com/coderzc)
 
 **Difficulty:** middle (2~3.5星 ⭐)
 
