@@ -229,7 +229,7 @@ RocksDB 作为 HugeGraph 未来主要的单机/分布式后端存储底座(存�
 2. 熟悉 `Java/Linux` 编程, 了解/可阅读 `C++/Makefile/JNI`更佳
 3. 了解 `BTree/LSM/SkipList/Trie Tree` 至少 1~2 种数据结构设计, 了解文件存储/编码压缩更佳
 4. 了解 ` RocksDB/HBase/TiKV` 等存储设计(包括 `memtable/wal/compaction`/LSM读写流程), 熟悉源码更佳
-5. 需要有较强的问题分析解决能力, 记录文档, 较好的沟通能力
+5. 需要有较强的问题分析解决能力,  了解性能分析/定位方式/火焰图更佳
 
 **mentor**: imbajin + lp
 
