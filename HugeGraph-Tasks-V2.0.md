@@ -194,9 +194,13 @@ HugeGraph 现在主要的查询语言 Gremlin 源自图查询语言框架 [Tinke
 
 ## 7. 图的监控和性能观测优化
 
-*补充 ing*
+**背景:**
+图引擎在线化，对于稳定性（SLA）要求高，需要完善的监控以及性能监测能力：
+* 在线问题排查：能够及时检测和解决图数据库或图处理系统中的线上问题，包括进程故障、异常行为等。
+* 统计分析：通过采集和分析关键指标，提供对系统在故障前、故障中和故障后的性能表现的深入理解，以便进行问题诊断和优化。
+* SLA保证：作为确保线上服务质量的重要手段，提供对图处理系统的监控和性能观测，以满足和监控系统的服务级别协议（SLA）要求。
 
-任务描述:
+**核心任务:**
 
 - 增加 `arthas server` 内嵌服务接口 (也就是说启动 HG Server 后可以直接使用 Arthas 动态观测/perf/debug, 无需单独安装)
 - 按照图名称、接口名称计算请求总数、成功数、失败数、平均响应时间、最大响应时间 (接口返回格式兼容 `Prometheus` 即可)
@@ -204,7 +208,7 @@ HugeGraph 现在主要的查询语言 Gremlin 源自图查询语言框架 [Tinke
 - Slow query 慢查询/慢日志的实现, 类似传统 DB 帮助用户能及时发现查询中的慢语句并方便分析溯源 (**进阶**项, 暂无参考)
 - 为 computer 增加 mertics 端点并返回 JVM mertics/superstep Stat/compute 耗时/input 耗时/output 耗时 等 (**进阶**项)
 
-**mentor**: liu / 待定
+**mentor**: liu / [JackyYangPassion](https://github.com/JackyYangPassion)
 
 **Difficulty:** low (1.5 星⭐)
 
