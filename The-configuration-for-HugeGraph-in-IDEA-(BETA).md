@@ -1,9 +1,10 @@
-> 背景是 IDEA 下的配置和说明, 非 IDEA 暂时需要考虑其他方式, 或者类似提供文档供参考
+> 背景是 IDEA 下的配置和说明, 非 IDEA 暂时需要考虑其他方式, 或者类似提供文档供参考 (后续小伙伴可以更新到官网)
 
 ## 第零步: Github PR/Git 流程/使用
 
 1. 推荐新手/熟手都可以直接尝试使用 GitHub 官方推出的 [Desktop](https://desktop.github.com/) 桌面端, 大幅简化和一体化 git 使用, 之后需要会单独写个简短文档说明
 2. 推荐浏览器安装启用 [Refined Github](https://github.com/refined-github/refined-github) 插件, 绑定个人 github token 后开启完整功能, 进一步优化各种使用细节, 使用更加顺滑 (Issue/PR/CI/conflicts等)
+3. 本地 `IDEA` 如何配置启动 [server 环境(win/unix)](https://gist.github.com/imbajin/1661450f000cd62a67e46d4f1abfe82c)  
 
 ## 第一步: 通用配置
 
