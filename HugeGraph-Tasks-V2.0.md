@@ -244,7 +244,7 @@ RocksDB 作为 HugeGraph 未来主要的单机/分布式后端存储底座(存�
 
 **Size**: middle (3星 ⭐, 需调试和适配, 已有 6 成代码参考)
 
-**Bonus:** 4~10k (视完成度/加分项)
+**Bonus:** 6k (已发布至 GLCC)
 
 **注:** 此任务也是 OSPP [并发集合](https://summer-ospp.ac.cn/org/prodetail/23ec80364?list=org&navpage=org)优化的同类, 与并发集合中的加分项直接关联 (但并不绑定)
 
