@@ -304,6 +304,7 @@ RocksDB 作为 HugeGraph 未来主要的单机/分布式后端存储底座(存�
 
 - 使用 [Docusaurus](https://docusaurus.io/) 框架来重构官网， 具体请参考已有的任务 [Refactor the official website](https://github.com/apache/incubator-hugegraph-doc/issues/103)
 - 优化官网排版与布局
+- 优化 hubble 并增加一些feat, 请参见 https://github.com/apache/incubator-hugegraph-toolchain/issues/382
 
 **mentor**: [coderzc](https://github.com/coderzc)
 
@@ -311,7 +312,7 @@ RocksDB 作为 HugeGraph 未来主要的单机/分布式后端存储底座(存�
 
 **Size**: medium (3星 ⭐, 需要适配和调试)
 
-**Bonus:** 3k
+**Bonus:** 6k
 
 ## 12. JanusGraph 的新增功能合入 HugeGraph
 
