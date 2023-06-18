@@ -326,7 +326,7 @@ RocksDB 作为 HugeGraph 未来主要的单机/分布式后端存储底座(存�
 - 移植核心的 `feature/bug-fix` 等到 HG 中来, 能改进则更佳
 - 有良好的英语表达能力, 能在有稿子 + Slide 的前提下, 进行简单的分享与 QA (**进阶**)
 
-**mentor**: [javeme](https://github.com/javeme)/[imbajin](https://github.com/imbajin)
+**mentor**: ? + [javeme](https://github.com/javeme)/[imbajin](https://github.com/imbajin)
 
 **Difficulty:** middle (2.5星 ⭐)
 
