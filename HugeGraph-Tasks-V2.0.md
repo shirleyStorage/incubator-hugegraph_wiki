@@ -17,7 +17,7 @@
 
 **任务参与方式**:
 
-1. [CCF协会-GLCC](https://www.gitlink.org.cn/glcc) 开源活动中参与模式 (限制是需要在 CCF 专属的代码平台[类似 gitee]进行提交与审阅/同步等, 其它待确定)
+1. [CCF协会-GLCC](https://www.gitlink.org.cn/glcc) 开源活动中参与模式 (限制是平台赞助项目需要在 CCF 专属的代码平台[类似 gitee]进行提交与审阅/同步等, 其它待确定, 自赞助不受影响)
 2. Apache HugeGraph 基金会直接分配模式, 社区独立的任务模式 (无额外第三方平台, 灵活性最高)
 
 注: 因与 OSPP 官方沟通后, 平台已经不允许再新增/修改任何 Task, 所以目前先考虑这两种方式, 有更好的方式或者平台提交任务可随时告知, 另外不确定 mentor/联系方式的任务可先联系 [imbajin](https://github.com/imbajin) 并加学生群接收最新消息
