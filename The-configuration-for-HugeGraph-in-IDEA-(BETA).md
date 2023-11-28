@@ -16,7 +16,7 @@
   - IDEA 设置中新建 "Copyright Profile", 复制社区 license header 注释文本配置后, 先单文件/小范围测试再铺开到模块级别
     - 请在 "Formatting" 配置中确认**不同类型**的文件的**注释**格式 (例如 Java/JS/Shell/SQL/XML 等, 勿直接使用默认值, 以**社区对应类型文件**作为参考标准确认)
   - 请注意配置 IDEA 的 "**Actions on save**" 功能, 可一次在(自动)保存文件时做多个件事 (但仍需再次检查)
-    - 建议勾选 "Reformat Code" + "Optimize imports" + "Rearrange code" + "Run code cleanup" + "Update copyright", 但要注意先测试检查无误
+    - 建议勾选 "Reformat Code" + "Optimize imports" + "Run code cleanup" + "Update copyright", 但要注意先测试检查无误 ("Rearrange code"在旧代码需要注意一些, 或者是发现调整的地方很多就临时关闭)
     - 格式化建议**提前排除** protobuf 生成的文件, 以及不需要/不应该格式化的文件 (如果不好排除, 则应暂时停用 Actions on save 的部分功能单独处理)
     - "clean code" 的地方可以帮我们避免大量不符合 `code`要求的问题, 注意有些 IDEA 只是警告(默认不修改), 但 icode 是强制, 建议**配置**为修改 (例如 if 缺括号)
   - 请先确保全仓库所有文件均为 "LF" **换行符**
