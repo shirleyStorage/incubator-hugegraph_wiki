@@ -5,7 +5,6 @@ Currently, it will redirect to here (move it later)
 ## Task & Activity:
 
 - [[OSPP] 2023开源之夏 Task V1.0](https://github.com/apache/incubator-hugegraph/wiki/%5BOSPP%5D-%E5%BC%80%E6%BA%90%E4%B9%8B%E5%A4%8F-proposal)
-- [[GLCC & HugeGraph Task] 2023 开源之夏新增 Task V2.0](https://github.com/apache/incubator-hugegraph/wiki/HugeGraph-Tasks-V2.0)
 - [The configuration for HugeGraph in IDEA (BETA-CN)](https://github.com/apache/incubator-hugegraph/wiki/The-configuration-for-HugeGraph-in-IDEA-(BETA))
 
 ## Release In Apache Way
