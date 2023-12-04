@@ -1,8 +1,8 @@
-Welcome to the incubator-hugegraph wiki!
+Welcome to the HugeGraph wiki!
 
 Currently, it will redirect to here (move it later)
 
-## Release In Apache Way 
+# Release In Apache Way 
 
 As a first-time participant in ASF release, you can read the following docs in order & provide feedback if you have any questions
 
@@ -13,10 +13,10 @@ As a first-time participant in ASF release, you can read the following docs in o
 5. ...
 
 
-## Task & Activity:
+# Task & Activity:
 
-- [[OSPP] 2023开源之夏 Task V1.0](https://github.com/apache/incubator-hugegraph/wiki/%5BOSPP%5D-%E5%BC%80%E6%BA%90%E4%B9%8B%E5%A4%8F-proposal)
 - [The configuration for HugeGraph in IDEA (BETA-CN)](https://github.com/apache/incubator-hugegraph/wiki/The-configuration-for-HugeGraph-in-IDEA-(BETA))
+- [[OSPP] 2023开源之夏 Task V1.0](https://github.com/apache/incubator-hugegraph/wiki/%5BOSPP%5D-%E5%BC%80%E6%BA%90%E4%B9%8B%E5%A4%8F-proposal)
 
 
 Refer:
