@@ -5,9 +5,9 @@ Currently, it will redirect to here (move it later)
 ## Release In Apache Way (README)
 
 1. [HugeGraph-Release-Role](https://github.com/apache/incubator-hugegraph-toolchain/wiki)
-2. [Before doing Apache release](https://github.com/apache/incubator-hugegraph/wiki/Apache%E5%8F%91%E7%89%88%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9)
-3. [How to release](https://github.com/apache/incubator-hugegraph-toolchain/wiki/HugeGraph-Release-V1.0)
-4. [How to take part in release voting](https://github.com/apache/incubator-hugegraph-toolchain/wiki/%E5%8F%91%E7%89%88%E6%8A%95%E7%A5%A8%E7%9B%B8%E5%85%B3)
+2. [(Before) doing Apache release](https://github.com/apache/incubator-hugegraph/wiki/Apache%E5%8F%91%E7%89%88%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9)
+3. [(Doing) How to release](https://github.com/apache/incubator-hugegraph-toolchain/wiki/HugeGraph-Release-V1.0)
+4. [(Voting) How to take part in release voting](https://github.com/apache/incubator-hugegraph-toolchain/wiki/%E5%8F%91%E7%89%88%E6%8A%95%E7%A5%A8%E7%9B%B8%E5%85%B3)
 5. ...
 
 
