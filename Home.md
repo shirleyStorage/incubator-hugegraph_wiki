@@ -2,7 +2,9 @@ Welcome to the incubator-hugegraph wiki!
 
 Currently, it will redirect to here (move it later)
 
-## Release In Apache Way (README)
+## Release In Apache Way 
+
+As a first-time participant in ASF release, you can read the following docs in order & provide feedback if you have any questions
 
 1. [HugeGraph-Release-Role](https://github.com/apache/incubator-hugegraph-toolchain/wiki)
 2. [(Before) doing Apache release](https://github.com/apache/incubator-hugegraph/wiki/Apache%E5%8F%91%E7%89%88%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9)
