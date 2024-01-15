@@ -184,9 +184,9 @@ ASF 的项目要求 `Copyright` 需放在 `NOTICE` 文件中而不能是 `licens
 
 2. 关于 `license header` 的几个点:
 
-   - (**原则**)不建议大家片段化使用第三方代码, 应**优先考虑**分离开 or 自己重写, 不得已引用的时候需要保留原有代码的 `license header`
+   - (**原则**) 不建议大家片段化使用第三方代码, 应**优先考虑**分离开 or 自己重写, 不得已引用的时候需要保留原有代码的 `license header`
    
-   - (**原则**)将第三方代码从一种**编程语言**转换成**另一种**编程语言, 不属于重大修改, 需保留原 `license header` (在一些**算法**相关的代码中较常见)
+   - (**原则**) 将第三方代码从一种**编程语言**转换成**另一种**编程语言, 不属于重大修改, 需保留原 `license header` (在一些**算法**相关的代码中较常见)
    
    - (**特殊情况**) 如果引入的第三方代码只是某个代码文件中的一小部分, 是否应该用它的 `license header` 作为整个文件的头?
      1. 如果引入的是一个接口定义/子类/结构体, 可否直接在这部分代码片段上引入它的 `license header`
@@ -194,6 +194,16 @@ ASF 的项目要求 `Copyright` 需放在 `NOTICE` 文件中而不能是 `licens
      3. 如仅保留一个`license header`, 是否需要在 `LICENSE` 文件中说明引入的代码行范围, 不引入的话似乎他人不知道哪部分代码是 refer 的
      
      **A:** 上述情况尽可能还是应通过头文件/独立类等方式单独**引入**, 少量**代码/函数**如需引用, 建议优先考虑**重写** (否则也应单独抽出, 避免陷入上述问题中)
+
+3. 何时需要发布二进制包
+
+   A: 发布二进制包通常是为了方便用户在不需要构建源代码的情况下快速部署和使用软件, 一般需要发布二进制包的都是需要「进程化」运行的
+
+   在 Apache 1.2.0 发版中, 存在一些发布了源码包但是没有发布二进制包的模块:
+
+     1. https://github.com/apache/incubator-hugegraph-commons: 仅作为一个普通的 jar/maven 依赖
+     2. https://github.com/apache/incubator-hugegraph-toolchain/tree/master/hugegraph-client: 仅作为一个普通的 jar/maven 依赖
+     3. https://github.com/apache/incubator-hugegraph-computer: 几乎没有用户使用, 且二进制发布易引入问题
 
 _持续更新 ing_
 
