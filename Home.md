@@ -1,5 +1,7 @@
 **Welcome to the HugeGraph wiki!**
 
+For more documentation, please refer to https://hugegraph.apache.org/docs and https://github.com/hugegraph/hugegraph/wiki.
+
 ## Release In Apache Way 
 
 As a first-time participant in ASF release, you can read the following docs in order & provide feedback if you have any questions
