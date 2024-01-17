@@ -6,7 +6,7 @@
 2. 推荐浏览器安装启用 [Refined Github](https://github.com/refined-github/refined-github) 插件, 绑定个人 github token 后开启完整功能, 进一步优化各种使用细节, 使用更加顺滑 (Issue/PR/CI/conflicts等)
 3. 本地 `IDEA` 如何配置启动 [server 环境(win/unix)](https://hugegraph.apache.org/cn/docs/contribution-guidelines/hugegraph-server-idea-setup/)  
 4. PR Commit log 提交规范核心参考 [Google-Conventional-Commit](https://www.conventionalcommits.org/zh-hans/v1.0.0/), 不过社区基于它简化了去掉了 `style/ci/build/perf/test` 这种 tag, 只保留最核心的 `feat/fix/chore/doc/refact` (取其核心)
-5. [GitHub 使用的一些小技巧](https://xuanwo.io/reports/2022-32/)
+5. 可阅读学习 [GitHub 使用的一些小技巧](https://xuanwo.io/reports/2022-32/) 文章
 
 
 ## 第一步: 通用配置
