@@ -19,6 +19,7 @@ As a first-time participant in ASF release, you can read the following docs in o
 ## Documentation
 
 - [[CN] The configuration for HugeGraph in IDEA (BETA)](https://github.com/apache/incubator-hugegraph/wiki/The-configuration-for-HugeGraph-in-IDEA-(BETA))
+- [HugeGraph Code Style Guide (BETA)](https://github.com/apache/incubator-hugegraph/wiki/HugeGraph-Code-Style-Guide)
 - [HugeGraph Multi‐Node Deployment Configuration (BETA)](https://github.com/apache/incubator-hugegraph/wiki/HugeGraph-Multi%E2%80%90Node-Deployment-Configuration)
 
 ---
