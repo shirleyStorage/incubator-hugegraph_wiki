@@ -24,6 +24,10 @@ As a first-time participant in ASF release, you can read the following docs in o
 - [HugeGraph Code Style Guide (BETA)](https://github.com/apache/incubator-hugegraph/wiki/HugeGraph-Code-Style-Guide)
 - [HugeGraph Multi‐Node Deployment Configuration (BETA)](https://github.com/apache/incubator-hugegraph/wiki/HugeGraph-Multi%E2%80%90Node-Deployment-Configuration)
 
+# Others
+
+- [How to be a eligible committer](https://github.com/apache/incubator-hugegraph/wiki/How-to-be-a-eligible-committer)
+
 ---
 
 References:
