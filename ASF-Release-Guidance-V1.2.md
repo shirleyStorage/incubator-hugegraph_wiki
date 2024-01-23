@@ -71,7 +71,7 @@ ls ~/.gnupg # 最后确认本地 gpg 文件夹内配置文件完整
 
 下一个就是与你的 [Apache 账号](https://id.apache.org/)进行绑定 (类似 github 上绑定 PGP), 你需要在设置里配置对应的**指纹**(如下):
 
-![image-20221012160742725](http://img.tingtattoo.cn/mac/image-20221012160742725.png)
+![image](https://github.com/apache/incubator-hugegraph/assets/79143929/82e8ac3b-f8f6-4d09-8e6a-d9f29e111f57)
 
 设置完成后一段时间(<24h), 你就可以在 apache 的官方页面看到你上传的 PGP [公钥](https://people.apache.org/keys/committer/jin)信息了, 然后你就无需过多的看 apache-pgp 页面里的其他说明了, 用到再说
 
@@ -202,7 +202,7 @@ git checkout -b release-1.x.x # tag 可以在 GitHub 上打
 
 在上面进行发版和相关操作. 后面的 pom 修改/版本检查可以都放这个分支操作, 最后合入到 master 中.
 
-<img src="http://img.tingtattoo.cn/mac/image-20221102164340406.png" alt="image-20221102164340406" style="zoom:50%;" />
+<img src="https://github.com/apache/incubator-hugegraph/assets/79143929/b64ef189-38f2-45a3-ab48-0604d9d821ac" alt="image" style="zoom:50%;" />
 
 发布后确认是 `pre-release` 状态, 进入下一步修改版本等操作. (注意 GitHub 可能会发送邮件广播, 慎重操作)
 
@@ -270,7 +270,7 @@ A: 首先如果是出现 `401: Unauthorized`  多半是你 `settings.xml` 的配
 
 如果上面的 `deploy` 成功了, 其实你本地的一系列 jar 包就已经上传到了 apache 的 maven 仓库, 但它只是一个 `staging` (暂存)状态, 我们用 ApacheID 登录 [staging repository](https://repository.apache.org/#stagingRepositories) 页面, 可以在这看到刚上传的仓库 然后这里之后我们要点击 `close` 让它确认**发布**才能被之后公网访问 (见4.2)
 
-![image-20221013174336677](http://img.tingtattoo.cn/mac/image-20221013174336677.png)
+![image](https://github.com/apache/incubator-hugegraph/assets/79143929/9fa147ce-f5e0-4bd1-9693-459134ec93c7)
 
 另外需要注意, 如果你发布多个`staging`版本, 确认新版发布无误后需要`drop`掉之前的发版才会让新版生效, 否则不会默认覆盖
 
