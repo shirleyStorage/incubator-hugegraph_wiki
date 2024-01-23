@@ -498,7 +498,7 @@ TODO: 篇幅原因, 邮件模板后续补上, 暂参考社区即可
 
 
 
-下载原有 `clutch status` 信息, 并进行更新, 生效后可在[此处](https://incubator.apache.org/clutch/hugegraph.html)可查询
+下载原有 `clutch status` 信息, 并进行更新, 生效后可在[clutch](https://incubator.apache.org/clutch/hugegraph.html)和[projects](https://incubator.apache.org/projects/hugegraph.html)页面查询
 
 ```bash
 # 1. 下载记录状态变更の文件
