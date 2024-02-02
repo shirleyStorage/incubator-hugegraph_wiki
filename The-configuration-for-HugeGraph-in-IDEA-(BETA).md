@@ -40,3 +40,25 @@
   - 关键功能/路径**缺乏测试 / 缺乏文档 / 需要重构**的, 需要在类开头加上 "TODO: need test/doc/refactor" 等标识字样
   - 删除**无用的/过时**的代码 (确认不再需要的, 谨慎不确定的可以标记"TODO")
   - 其他基本的明显影响阅读/合并的问题 etc.
+
+---
+
+附录: (ASF 标准头, 新的文件都应该采用这个排版, 有些旧排版的换行对齐不太合理, 应该予以统一替换
+```java
+/*
+ * Licensed to the Apache Software Foundation (ASF) under one or more
+ * contributor license agreements.  See the NOTICE file distributed with
+ * this work for additional information regarding copyright ownership.
+ * The ASF licenses this file to You under the Apache License, Version 2.0
+ * (the "License"); you may not use this file except in compliance with
+ * the License.  You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+```
