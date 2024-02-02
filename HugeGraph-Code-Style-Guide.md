@@ -201,6 +201,27 @@ LOG.debug("Do query: " + query);
 E.checkArgument(!query.empty(), "The query is empty: " + query);
 ```
 
-
 ### 11. 其它
 其它未提及方面请以 [Google Java Style Guide](https://google.github.io/styleguide/javaguide.html) 为准。
+
+### 附录
+
+ASF 标准头(file header), 新的代码/配置文件都应该采用这个排版, 有些旧排版的换行对齐不太合理, 应该予以统一替换
+```java
+/*
+ * Licensed to the Apache Software Foundation (ASF) under one or more
+ * contributor license agreements.  See the NOTICE file distributed with
+ * this work for additional information regarding copyright ownership.
+ * The ASF licenses this file to You under the Apache License, Version 2.0
+ * (the "License"); you may not use this file except in compliance with
+ * the License.  You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+```
