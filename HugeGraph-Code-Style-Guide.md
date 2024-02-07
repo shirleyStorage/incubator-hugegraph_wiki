@@ -190,7 +190,8 @@ LOG.info("Opening backend store '{}' for graph '{}'",
 
 ### 10. 字符串拼接
 
-建议优先使用`String.format()`进行字符串拼接，以增强代码可读性。
+建议优先使用 `String.format()` 进行字符串拼接，以增强代码可读性。
+
 ```java
 String message = String.format("Graph '%s' start backup!", this.graph);
 ```
@@ -206,7 +207,7 @@ E.checkArgument(!query.empty(), "The query is empty: " + query);
 
 ### 附录
 
-ASF 标准头(file header), 新的代码/配置文件都应该采用这个排版(注释方式自行调整), 有些旧排版的换行对齐不太合理, 应该予以统一替换
+ASF 标准头 (file header), 新的代码/配置文件都应该采用这个排版 (注释方式自行调整), 有些旧排版的换行对齐不太合理, 应该予以统一替换
 ```java
 /*
  * Licensed to the Apache Software Foundation (ASF) under one or more
