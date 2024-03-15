@@ -1,6 +1,6 @@
 > On the way, coming soon~ Contact us if u want to try~
 
-# 1. 图加工: 基于路径的起点与终点构建新边类型
+# 1. HugeGraph 图加工: 基于路径的起点与终点构建新边类型
 ## 描述
 
 在大数据处理场景中，为了更好地利用图数据库 hugegraph，我们提出了一个新的图加工/扩展功能。
