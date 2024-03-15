@@ -15,7 +15,7 @@ As a first-time participant in ASF release, you can read the following docs in o
 
 # Task & Activity
 
-- [[OSPP] 2024 开源之夏 Task V1.0](https://github.com/apache/incubator-hugegraph/wiki/OSPP20204)
+- [[OSPP] 2024 开源之夏 Task V1.0](https://github.com/apache/incubator-hugegraph/wiki/OSPP2024)
 - [HugeGraph Tasks 2024](https://github.com/apache/incubator-hugegraph/wiki/HugeGraph-Tasks-2024)
 
 # Documentation
