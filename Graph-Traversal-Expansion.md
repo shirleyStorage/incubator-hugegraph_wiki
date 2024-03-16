@@ -23,8 +23,6 @@ For example, in a **family tree**, starting from each vertex, following the path
 - Understand **data structures and algorithms**, especially those related to graphs.
 - Have good problem-solving abilities and teamwork skills.
 
-**PS:** More details refer: [hugegraph/wiki/Graph-Traversal-Expansion](https://github.com/apache/incubator-hugegraph/wiki/Graph-Traversal-Expansion)
-
 ## Time Nodes
 
 1. Start to use and understand `HugeGraph` preliminarily, and can complete the setting and debugging of the **local environment**.
