@@ -1,6 +1,6 @@
 > On the way, coming soon~ Contact us if u want to try~
 
-# 1. HugeGraph 图加工: 基于路径的起点与终点构建新边类型 ([EN-Version](https://github.com/apache/incubator-hugegraph/wiki/Graph-Traversal-Expansion))
+# 1. 图加工: 基于路径的起点与终点构建新边类型 ([EN-Version](https://github.com/apache/incubator-hugegraph/wiki/Graph-Traversal-Expansion))
 
 ## 描述
 
