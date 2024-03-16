@@ -1,6 +1,16 @@
 # **Background**
 
-When the **JVM GC** performs a large amount of garbage collection, the latency of the request is often high, and the **response time** becomes uncontrollable. To reduce request latency and response time jitter, the **hugegraph-server graph query engine** has already used off-heap memory in most **OLTP algorithms**. However, at present, hugegraph cannot control memory based on a single request Query, so a Query may exhaust the memory of the entire process and cause **OOM**, or even cause the service to be unable to respond to other requests. To solve this problem, we can implement a memory management module based on a single Query. Applicants will work with community developers to complete this task, and the specific implementation plan and division of labor/priority can be adjusted as needed.
+When the **JVM GC** performs a large amount of garbage collection, the latency of the request is often high, and the **response time** becomes uncontrollable. To reduce request latency and response time jitter, the **hugegraph-server graph query engine** has already used off-heap memory in most **OLTP algorithms**. 
+
+However, at present, hugegraph cannot control memory based on a single request Query, so a Query may exhaust the memory of the entire process and cause **OOM**, or even cause the service to be unable to respond to other requests. To solve this problem, we can implement a memory management module based on a single Query. Applicants will work with community developers to complete this task, and the specific implementation plan and division of labor/priority can be adjusted as needed.
+
+# Technical Skill Points
+
+1. **Java/JVM Basics**: Deep understanding of Java's memory model, including the management and operation of heap memory and off-heap memory.
+2. **Java NIO**: Java NIO library provides an interface for operating off-heap memory, which needs to be mastered. (Familiarity with Netty or other memory management basic libraries is preferred)
+3. **Concurrent Programming**: Since memory management involves multi-thread concurrent operations, it is necessary to have knowledge of concurrent programming and multi-thread safety.
+4. **Data Structures**: Understand and apply appropriate data structures to manage memory, such as using queues, stacks, etc., to manage memory blocks.
+5. **Operating System**: Understand the memory management mechanism of the operating system in order to better understand and optimize Java's off-heap memory management.
 
 # **Project Output Requirements**
 
