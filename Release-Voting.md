@@ -94,6 +94,7 @@ Note:
 - 这封邮件由本次**发版负责人**发出, 请先**测试发送**查看排版是否正常 (务必)
 - 发送邮件后, 请从[hugegraph-dev 邮箱](https://lists.apache.org/list?dev@hugegraph.apache.org)里复制邮件链接发到 committer/发版群
 - ASF 推荐发版可使用 apache 邮箱方便身份确认, 请提前在 Gmail 或其他邮箱里配置 apache 邮箱发件设置并**测试**
+- 参与投票验证的同学, 验证内容 + 回复邮件模板参考[此处](https://hugegraph.apache.org/cn/docs/contribution-guidelines/validate-release/#%E9%82%AE%E4%BB%B6%E6%A8%A1%E6%9D%BF)
 
 #### B. 关闭投票邮件
 
