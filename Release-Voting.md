@@ -2,7 +2,7 @@
 
 > 发送投票邮件时请使用 `xxx@apache.org` 邮箱发送, 发送前务必在发件箱内设置为**纯文本**格式, 见官方[邮件说明](https://infra.apache.org/contrib-email-tips)
 >
-> PS: 发邮件前, 建议 double check 确认
+> PS: 发邮件前, 建议 double check 确认 (先发给其他 PMC 检查)
 
 然后有以下注意点:
 
@@ -58,8 +58,6 @@ https://github.com/apache/incubator-hugegraph-commons/tree/1.0.0
 
 Keys to verify the Release Candidate:
 https://downloads.apache.org/incubator/hugegraph/KEYS
-
-Due to this is the first release version, we have 3 people to participate in it.
 
 The GPG user ID(s): xxxx
 
