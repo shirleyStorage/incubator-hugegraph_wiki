@@ -30,19 +30,19 @@
 
 ```html
 邮件标题：
-[VOTE] Release Apache HugeGraph (Incubating) 1.0.0
+[VOTE] Release Apache HugeGraph (Incubating) 1.x.x
 
 邮件正文：
 
 Hello HugeGraph Community,
 
-This is a call for vote to release Apache HugeGraph (Incubating) version 1.0.0
+This is a call for vote to release Apache HugeGraph (Incubating) version 1.x.x
 
 Release notes:
-https://hugegraph.apache.org/docs/changelog/hugegraph-1.0.0-release-notes/
+https://hugegraph.apache.org/docs/changelog/hugegraph-1.x.x-release-notes/
 
 Source and binary files:
-https://dist.apache.org/repos/dist/dev/incubator/hugegraph/1.0.0/
+https://dist.apache.org/repos/dist/dev/incubator/hugegraph/1.x.x/
 
 Maven artifacts are available in a staging repository:
 https://repository.apache.org/content/repositories/orgapachehugegraph-xxxx (server)
@@ -51,10 +51,10 @@ https://repository.apache.org/content/repositories/orgapachehugegraph-xxxx (comp
 https://repository.apache.org/content/repositories/orgapachehugegraph-xxxx (commons)
 
 Git tag for the release:
-https://github.com/apache/incubator-hugegraph/tree/1.0.0
-https://github.com/apache/incubator-hugegraph-toolchain/tree/1.0.0
-https://github.com/apache/incubator-hugegraph-computer/tree/1.0.0
-https://github.com/apache/incubator-hugegraph-commons/tree/1.0.0
+https://github.com/apache/incubator-hugegraph/tree/1.x.x
+https://github.com/apache/incubator-hugegraph-toolchain/tree/1.x.x
+https://github.com/apache/incubator-hugegraph-computer/tree/1.x.x
+https://github.com/apache/incubator-hugegraph-commons/tree/1.x.x
 
 Keys to verify the Release Candidate:
 https://downloads.apache.org/incubator/hugegraph/KEYS
@@ -90,7 +90,7 @@ Thanks,
 ${Current Release Manager}
 ```
 
-这封邮件由本次发版负责人发出, 请先**测试发送**查看排版是否正常
+这封邮件由本次发版负责人发出, 请先**测试发送**查看排版是否正常 (务必)
 
 #### B. 关闭投票邮件
 
