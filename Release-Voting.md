@@ -14,17 +14,17 @@
   svn ci --username $ASF_USERNAME --password "$ASF_PASSWORD" -m "Append KEYS for Xxx"
   https://downloads.apache.org/incubator/hugegraph/KEYS
   ```
-2. 先在 `HugeGraph` 社区投票, 发送邮件至：`dev@hugegraph.apache.org`
-3. 发送汇总邮件通过后, 再在 `Incubator` 社区投票, 发送邮件至：`general@incubator.apache.org` (毕业后只需在 HugeGraph 社区投票)
+2. 先在 `HugeGraph` 社区投票, 发送邮件至：`dev@hugegraph.apache.org` (可选抄送 mentors, 有导师提前参与验证可加速发版进程)
+3. 发送汇总邮件通过后, 再在 `Incubator` 社区投票, 发送邮件至：`general@incubator.apache.org` (毕业后则只需在 HugeGraph 社区投票)
 4. 社区投票的邮件正文中的 `${Current Release Manager}`, 填写负责本次发布的人员 (e.g: `Jack Li` )
 
 ## 0x01. HugeGraph 投票阶段
 
 1. 发起投票邮件到 `dev@hugegraph.apache.org`。**(P)PMC** 需要先按照**发版文档**校验章节确认发版的正确性，然后再进行投票
 2. 经过至少 **72 小时**并统计到 ≥ 3 个 `+1` (P)PMC 票后，才视为正常通过
-3. 72h 后可宣布投票结果，发起投票结果邮件到 `dev@hugegraph.apache.org` (常用模板见下)
+3. 72h 后可宣布投票结果，发起投票 [RESULT] 邮件到 `dev@hugegraph.apache.org` (模板见下)
 
-#### A.  HugeGraph 社区投票模板
+#### A.  HugeGraph 社区内投票模板 (dev)
 
 下面的模板仅供参考, 请注意使用纯文本模式发送邮件避免乱码: (特别注意修改**版本号**)
 
@@ -172,7 +172,7 @@ Note:
 2. 等待至少 72h, 且需 IPMC Member ≥ 3 个 `+1` 投票，才可进入下一阶段
 3. 宣布投票结果，发起投票结果邮件到 `general@incubator.apache.org` 并抄送邮件至 `dev@hugegraph.apache.org`
 
-#### A. Incubator 社区投票模板
+#### A. Incubator 社区投票模板 (general)
 
 参考示例: (之后可以把上一次的**投票链接**放此处参考, 记得修改**版本号**)
 
