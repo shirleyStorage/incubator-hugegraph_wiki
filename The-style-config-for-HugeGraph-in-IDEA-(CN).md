@@ -14,6 +14,7 @@
 
 - 先确认准备工作/配置文件等做完, 然后再开始修改调整, 此时可以一举多得, 同时调整多个部分, 效率高许多
   - 首先导入 IDEA 专属  [hugegraph-style.xml](https://github.com/apache/incubator-hugegraph/blob/master/hugegraph-style.xml) code style 配置 (**务必**)
+  - IDEA 商店安装 [autocorrect](https://plugins.jetbrains.com/plugin/20244-autocorrect) + [语法检查](https://github.com/apache/incubator-hugegraph-doc/pull/282#issuecomment-1719156940)(grazie) 插件, 并在[选项中](https://github.com/apache/incubator-hugegraph-doc/pull/282#issuecomment-1719156940)开启使用, 自动处理排版注释/中英文/空格/标点符号等)
   - 检查"Auto Import" 选项, 确保 "Add on the fly" + "Optimize on the fly" 开启✓
   - IDEA 设置中新建 "Copyright Profile", 复制社区 license header 注释文本配置后, 先单文件/小范围测试再铺开到模块级别
     - 请在 "Formatting" 配置中确认**不同类型**的文件的**注释**格式 (例如 Java/JS/Shell/SQL/XML 等, 勿直接使用默认值, 以**社区对应类型文件**作为参考标准确认)
@@ -25,6 +26,8 @@
     - 如果存在不符合的[先格式化](https://codeantenna.com/a/afhmHjwAjT), 然后进行第一次**提交**, 否则后续换包名后会被识别为**整个文件**修改 (重要)
     - 建议 git 设置禁止**混合换行符**提交 `git config --global core.safecrlf true` (以及设置提交时自动转换 LF 换行符 `git config --global core.autocrlf input`)
     - 更好的做法是在项目根下配置`.gitattributes`文件, 在里面统一设定本项目的任意平台下提交换行符 (推荐)
+
+> 普通同学到此止步, 上述操作完就可以快速开始 HG 的代码阅读/开发了
 
 ## 第二步: 代码 clean
 
