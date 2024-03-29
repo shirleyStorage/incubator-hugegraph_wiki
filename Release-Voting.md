@@ -50,11 +50,11 @@ https://repository.apache.org/content/repositories/orgapachehugegraph-xxxx (tool
 https://repository.apache.org/content/repositories/orgapachehugegraph-xxxx (computer)
 https://repository.apache.org/content/repositories/orgapachehugegraph-xxxx (commons)
 
-Git tag for the release:
-https://github.com/apache/incubator-hugegraph/tree/1.x.x
-https://github.com/apache/incubator-hugegraph-toolchain/tree/1.x.x
-https://github.com/apache/incubator-hugegraph-computer/tree/1.x.x
-https://github.com/apache/incubator-hugegraph-commons/tree/1.x.x
+Git tag & commit hash for the release:
+https://github.com/apache/incubator-hugegraph/tree/1.x.x (hashXX)
+https://github.com/apache/incubator-hugegraph-toolchain/tree/1.x.x (hashXX)
+https://github.com/apache/incubator-hugegraph-computer/tree/1.x.x (hashXX)
+https://github.com/apache/incubator-hugegraph-commons/tree/1.x.x (hashXX)
 
 Keys to verify the Release Candidate:
 https://downloads.apache.org/incubator/hugegraph/KEYS
