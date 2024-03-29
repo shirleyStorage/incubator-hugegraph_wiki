@@ -10,7 +10,7 @@ For example, in a **family tree**, starting from each vertex, following the path
 
 ## Requirement Standards
 
-1. The **starting point** can be defined by rules.
+1. The **starting point** can be defined by rules. (refer [traverser-api](https://hugegraph.apache.org/docs/clients/restful-api/traverser/#3216-template-paths))
 2. Implement path **traversal** based on the specified path.
 3. Implement the logic of building a **new edge** from the start to the end of this path. (API)
 4. Complete relevant **unit tests (UT)**.
