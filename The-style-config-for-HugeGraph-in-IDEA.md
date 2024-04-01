@@ -1,16 +1,16 @@
 > (EN version) The background is the configuration and description under IDEA. For non-IDEA, you need to consider other methods temporarily, or provide similar documents for reference (subsequent partners can update to the official website)
 
-## Step Zero: Github PR/Git Process/Usage
+## 0x00: Github PR/Git Process/Usage
 
 1. It is recommended that both beginners and experienced users try to use the [Desktop](https://desktop.github.com/) desktop end launched by GitHub official, which greatly simplifies and integrates git usage. A brief document will be written later for explanation.
-2. It is recommended to install and enable the [Refined Github](https://github.com/refined-github/refined-github) plugin in the browser. After binding the personal github token, the full function is turned on, further optimizing various usage details, and the usage is smoother (Issue/PR/CI/conflicts, etc.)
+2. It is recommended to install and enable the [Refined Github](https://github.com/refined-github/refined-github) plugin in the browser. After binding the personal GitHub token, the full function is turned on, further optimizing various usage details, and the usage is smoother (Issue/PR/CI/conflicts, etc.)
 3. How to configure and start the [server environment(win/unix)](https://hugegraph.apache.org/cn/docs/contribution-guidelines/hugegraph-server-idea-setup/) in local `IDEA`
 4. **PR Title** submission specification refers to [Google-Conventional-Commit](https://www.conventionalcommits.org/zh-hans/v1.0.0/), the community simplifies it based on it and removes the extended tag such as `style/ci/build/perf/test`, only retains the **core** `feat/fix/chore/doc/refact` (except for exclusive nouns, all use **lowercase letters**)
  `e.g: fix(server): NPE when query Gremlin`
 5. You can read and learn the article [Some Tips for Using GitHub](https://xuanwo.io/reports/2022-32/)
 
 
-## Step One: General Configuration
+## 0x01: General Configuration
 
 - First confirm that the preparatory work/configuration files, etc. are completed, and then start to modify and adjust. At this time, you can get multiple benefits, adjust multiple parts at the same time, and the efficiency is much higher
   - First import the IDEA-specific [hugegraph-style.xml](https://github.com/apache/incubator-hugegraph/blob/master/hugegraph-style.xml) code style configuration (**must**)
@@ -29,7 +29,7 @@
 
 > Ordinary students stop here, after the above operations are completed, you can quickly start HG's code reading/development
 
-## Step Two: Code Clean
+## 0x02: Code Clean
 
 - Basic formatting + clean work (use IDEA plugin to assist, **module --> project** level right-click `Reformat Code/Analyze Code`, etc.)
   - Confirm that the package name import order is correct (if Step1 has been done, just check again here)
