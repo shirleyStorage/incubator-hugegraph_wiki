@@ -21,7 +21,7 @@
   - Please note the configuration of IDEA's "**Actions on save**" function, which can do multiple things at one time when (automatically) saving files (but still need to check again)
     - It is recommended to check "Reformat Code" + "Optimize imports" + "Run code cleanup" + "Update copyright", but pay attention to testing and checking for errors first ("Rearrange code" needs to pay attention to some old codes, or temporarily turn off if there are many adjustments found)
     - Formatting is recommended to **exclude in advance** protobuf generated files, as well as files that do not need/should not be formatted (if it is not easy to exclude, you should temporarily disable some functions of Actions on save to handle separately)
-    - The "clean code" place can help us avoid a lot of problems that do not meet the `code` requirements. Note that some IDEA are just warnings (default not modified), but icode is mandatory, it is recommended to **configure** to modify (for example, if missing parentheses)
+    - The "clean code" place can help us avoid a lot of problems that do not meet the `code` requirements. Note that some IDEA are just warnings (default not modified), but *code is mandatory, it is recommended to **configure** to modify (for example, if missing parentheses)
   - Please ensure that all files in the entire warehouse are "LF" **line breaks**
     - If there is non-compliance, [format first](https://codeantenna.com/a/afhmHjwAjT), and then make the first **commit**, otherwise the subsequent package name will be identified as **the entire file** modification (important)
     - It is recommended to set git to prohibit **mixed line breaks** to submit `git config --global core.safecrlf true` (and set to automatically convert LF line breaks when submitting `git config --global core.autocrlf input`)
@@ -93,7 +93,7 @@ Appendix: (ASF standard header, new files should adopt this typesetting, some ol
   - 请注意配置 IDEA 的 "**Actions on save**" 功能, 可一次在(自动)保存文件时做多个件事 (但仍需再次检查)
     - 建议勾选 "Reformat Code" + "Optimize imports" + "Run code cleanup" + "Update copyright", 但要注意先测试检查无误 ("Rearrange code"在旧代码需要注意一些, 或者是发现调整的地方很多就临时关闭)
     - 格式化建议**提前排除** protobuf 生成的文件, 以及不需要/不应该格式化的文件 (如果不好排除, 则应暂时停用 Actions on save 的部分功能单独处理)
-    - "clean code" 的地方可以帮我们避免大量不符合 `code`要求的问题, 注意有些 IDEA 只是警告(默认不修改), 但 icode 是强制, 建议**配置**为修改 (例如 if 缺括号)
+    - "clean code" 的地方可以帮我们避免大量不符合 `code`要求的问题, 注意有些 IDEA 只是警告(默认不修改), 但 *code 是强制, 建议**配置**为修改 (例如 if 缺括号)
   - 请先确保全仓库所有文件均为 "LF" **换行符**
     - 如果存在不符合的[先格式化](https://codeantenna.com/a/afhmHjwAjT), 然后进行第一次**提交**, 否则后续换包名后会被识别为**整个文件**修改 (重要)
     - 建议 git 设置禁止**混合换行符**提交 `git config --global core.safecrlf true` (以及设置提交时自动转换 LF 换行符 `git config --global core.autocrlf input`)
