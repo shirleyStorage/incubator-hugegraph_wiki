@@ -452,7 +452,7 @@ mvn clean test -Dcheckstyle.skip=false
 1. HugeGraph 社区内, 发起邮件到 `dev@hugegraph.apache.org`, 然后经过 72h + 3个以上 binding (PPMC) 邮件投票 +1 即可
 2. Apache 社区内, 发起投票邮件到 `general@incubator.apache.org`, 然后经过 72h + 3个以上 binding (IPMC) 邮件投票 +1 即可
 
-TODO: 篇幅原因, 邮件模板后续补上, 暂参考社区即可
+PS: 篇幅原因, 邮件模板参考 [WIKI](https://github.com/apache/incubator-hugegraph/wiki/Release-Voting)
 
 **注:**  Gmail/Live/QQ 邮件中使用**纯文本**模式编辑 (而不要选择 HTML 模式), 以免被拒或者过滤
 
@@ -462,7 +462,7 @@ TODO: 篇幅原因, 邮件模板后续补上, 暂参考社区即可
 
 #### A. 正式发版
 
-1. (**重要**) 将 [dev](https://dist.apache.org/repos/dist/dev/hugegraph) 目录下的发布包移动到 [release](https://dist.apache.org/repos/dist/release/hugegraph) 目录下，KEYS 有更新的，也需要同步更新 (命令参考如下, 版本变量自行传入)
+1. (**重要/谨慎**) 将 [dev](https://dist.apache.org/repos/dist/dev/hugegraph) 目录下的发布包移动到 [release](https://dist.apache.org/repos/dist/release/hugegraph) 目录下，KEYS 有更新的，也需要同步更新 (命令参考如下, 版本变量自行传入, 熟悉后可考虑 CI 方式)
 
    ```bash
    # 从 dev 移动文件夹到 release (请注意避免冲突, 有冲突则先缺点好再删除+移动)
@@ -484,17 +484,17 @@ TODO: 篇幅原因, 邮件模板后续补上, 暂参考社区即可
 
 4. (可选) 修改 GitHub 的 `README`，将版本号更新到最新发布的版本, 以及增加说明/修复联系方式等
 
-5. (**重要**) 在官网下载[中英文页面]()上添加最新版本的二进制/源码包下载链接 (注意确认有效避免 404)
+5. (**重要**) 在官网下载[中英文页面](https://hugegraph.apache.org/docs/download/download/)上添加最新版本的二进制/源码包下载链接 (注意确认**有效**避免 404)
 
-6. (可选) 合并 `${release-version}-release` 分支到主干分支, 然后删除相应的 release 分支 (注意保留 `tag`)
+6. (可选) 合并 `${release-version}-release` 分支到主干分支, 有必要可删除相应 release 分支, 无必要则跳过此步 (注意保留 `tag`)
 
-7. 最后把 maven 仓库里处于 `staging` 状态的包点击 `release` 转换为正式发布 (需要等待 24h 同步, 此后任何人都可以直接下载访问)
+7. 最后才能把 maven 仓库里处于 `staging` 状态的包点击 `release` 转换为正式发布 (需要等待 **24h** 同步, 此后任何人都可以直接下载访问)
 
 #### B. 邮件告知 + 更新发版信息
 
 在发版流程走完, 确认 maven/download 等都可以正常下载使用后, 发一封通知邮件告诉大家**发版正式完成** (不用投票)
 
-发邮件到 `dev@hugegraph.apache.org` 和 `general@incubator.apache.org` 告知正式 release (邮件模版参考社区, 待补)
+发邮件到 `general@incubator.apache.org` 抄送 `dev@hugegraph.apache.org` 宣布正式 release (邮件模版参考社区, 待补)
 
 
 
@@ -518,7 +518,7 @@ svn co https://svn.apache.org/repos/asf/incubator/public/trunk/content/projects/
 svn commit -m "update release info for hugegraph ${release_version}"
 ```
 
-至此, 所有流程走完, 一次完整的发版流程就告一段落, 后续如果发现发版内容有严重问题, 可参考打补丁流程.
+至此, 所有流程走完, 一次完整的发版流程就告一段落, 后续如果发现发版内容有严重问题, 可参考打补丁流程. (另外, 官方**公众号** 的文章更新请务必提前准备)
 
 ---
 
