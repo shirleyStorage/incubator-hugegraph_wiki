@@ -484,7 +484,7 @@ PS: 篇幅原因, 邮件模板参考 [WIKI](https://github.com/apache/incubator-
 
 4. (可选) 修改 GitHub 的 `README`，将版本号更新到最新发布的版本, 以及增加说明/修复联系方式等
 
-5. (**重要**) 在官网下载[中英文页面](https://hugegraph.apache.org/docs/download/download/)上添加最新版本的二进制/源码包下载链接 (注意确认**有效**避免 404)
+5. (**重要**) 在官网下载[中英文页面](https://hugegraph.apache.org/docs/download/download/)上提交 PR 加入最新版本的**二进制/源码包**下载链接 (注意确认**有效**避免 404)
 
 6. (可选) 合并 `${release-version}-release` 分支到主干分支, 有必要可删除相应 release 分支, 无必要则跳过此步 (注意保留 `tag`)
 
