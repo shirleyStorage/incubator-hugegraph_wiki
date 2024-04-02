@@ -486,11 +486,11 @@ PS: 篇幅原因, 邮件模板参考 [WIKI](https://github.com/apache/incubator-
 
 5. (**重要**) 在官网下载[中英文页面](https://hugegraph.apache.org/docs/download/download/)上提交 PR 加入最新版本的**二进制/源码包**下载链接 (注意确认**有效**避免 404)
 
-6. 在 [actions](https://github.com/hugegraph/actions/actions) 仓库发布 tag 对应的容器镜像到 DockerHub 上
+6. (可选) 有必要可合并/删除相应 release 分支, 无必要则跳过此步 (注意 `tag` 不可删)
 
-7. (可选) 有必要可合并/删除相应 release 分支, 无必要则跳过此步 (注意 `tag` 不可删)
+7. 最后才能把 maven 仓库里处于 `staging` 状态的包点击 `release` 转换为正式发布 (需要等待 **24h** 同步, 此后任何人都可以直接下载访问)
 
-8. 最后才能把 maven 仓库里处于 `staging` 状态的包点击 `release` 转换为正式发布 (需要等待 **24h** 同步, 此后任何人都可以直接下载访问)
+8. 在 [actions](https://github.com/hugegraph/actions/actions) 仓库发布 tag 对应的稳定版本容器镜像到 DockerHub 上
 
 #### B. 邮件告知 + 更新发版信息
 
