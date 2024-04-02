@@ -478,7 +478,7 @@ PS: 篇幅原因, 邮件模板参考 [WIKI](https://github.com/apache/incubator-
      -m "copy KEYS for release ${release_version}"
    ```
 
-2.  (检查)确认 [dev](https://dist.apache.org/repos/dist/dev/incubator/hugegraph) 的不存在旧版本的包, 以及 [release](https://dist.apache.org/repos/dist/release/incubator/hugegraph) 目录下上一个版本的发布包，这些包会被自动保存在 [这里](https://archive.apache.org/dist/incubator/hugegraph) 
+2.  (检查)确认 [dev](https://dist.apache.org/repos/dist/dev/incubator/hugegraph) 不存在**旧版本**的包, 以及 [release](https://dist.apache.org/repos/dist/release/incubator/hugegraph) 目录下上一个版本的发布包，这些包会被自动保存在 [这里](https://archive.apache.org/dist/incubator/hugegraph) 
 
 3. 将 GitHub 上的仓库的[pre-release notes](https://github.com/apache/hugegraph/releases) 改为正式版本 (包括 server/toolchain/commons)
 
@@ -486,9 +486,11 @@ PS: 篇幅原因, 邮件模板参考 [WIKI](https://github.com/apache/incubator-
 
 5. (**重要**) 在官网下载[中英文页面](https://hugegraph.apache.org/docs/download/download/)上提交 PR 加入最新版本的**二进制/源码包**下载链接 (注意确认**有效**避免 404)
 
-6. (可选) 合并 `${release-version}-release` 分支到主干分支, 有必要可删除相应 release 分支, 无必要则跳过此步 (注意保留 `tag`)
+6. 在 [actions](https://github.com/hugegraph/actions/actions) 仓库发布 tag 对应的容器镜像到 DockerHub 上
 
-7. 最后才能把 maven 仓库里处于 `staging` 状态的包点击 `release` 转换为正式发布 (需要等待 **24h** 同步, 此后任何人都可以直接下载访问)
+7. (可选) 有必要可合并/删除相应 release 分支, 无必要则跳过此步 (注意 `tag` 不可删)
+
+8. 最后才能把 maven 仓库里处于 `staging` 状态的包点击 `release` 转换为正式发布 (需要等待 **24h** 同步, 此后任何人都可以直接下载访问)
 
 #### B. 邮件告知 + 更新发版信息
 
