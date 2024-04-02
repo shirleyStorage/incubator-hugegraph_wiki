@@ -478,7 +478,7 @@ PS: 篇幅原因, 邮件模板参考 [WIKI](https://github.com/apache/incubator-
      -m "copy KEYS for release ${release_version}"
    ```
 
-2.  (检查)确认 [dev](https://dist.apache.org/repos/dist/release/incubator/hugegraph) 的不存在旧版本的包, 以及 [release](https://dist.apache.org/repos/dist/release/hugegraph) 目录下上一个版本的发布包，这些包会被自动保存在 [这里](https://archive.apache.org/dist/incubator/hugegraph) 
+2.  (检查)确认 [dev](https://dist.apache.org/repos/dist/dev/incubator/hugegraph) 的不存在旧版本的包, 以及 [release](https://dist.apache.org/repos/dist/release/incubator/hugegraph) 目录下上一个版本的发布包，这些包会被自动保存在 [这里](https://archive.apache.org/dist/incubator/hugegraph) 
 
 3. 将 GitHub 上的仓库的[pre-release notes](https://github.com/apache/hugegraph/releases) 改为正式版本 (包括 server/toolchain/commons)
 
