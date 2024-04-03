@@ -490,7 +490,7 @@ PS: 篇幅原因, 邮件模板参考 [WIKI](https://github.com/apache/incubator-
 
 7. 最后才能把 maven 仓库里处于 `staging` 状态的包点击 `release` 转换为正式发布 (需要等待 **24h** 同步, 此后任何人都可以直接下载访问)
 
-8. 在 [actions](https://github.com/hugegraph/actions/actions) 仓库发布 tag 对应的稳定版本容器镜像到 DockerHub 上
+8. 在 [actions](https://github.com/hugegraph/actions/actions) 仓库发布 tag 对应的稳定版本容器镜像到 [DockerHub](https://hub.docker.com/r/hugegraph/hugegraph/tags) 上
 
 #### B. 邮件告知 + 更新发版信息
 
