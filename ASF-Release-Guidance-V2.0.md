@@ -551,6 +551,9 @@ On behalf of Apache HugeGraph(incubating) Team
 svn co https://svn.apache.org/repos/asf/incubator/public/trunk/content/projects/
 
 # 2. 修改编辑 (注意下面内容仅供参考, 请勿照搬)
+cd projects 
+vim hugegraph.xml
+
 <section id="News">
       <title>News</title>
       <ul>
