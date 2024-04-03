@@ -496,7 +496,51 @@ PS: 篇幅原因, 邮件模板参考 [WIKI](https://github.com/apache/incubator-
 
 在发版流程走完, 确认 maven/download 等都可以正常下载使用后, 发一封通知邮件告诉大家**发版正式完成** (不用投票)
 
-发邮件到 `general@incubator.apache.org` 抄送 `dev@hugegraph.apache.org` 宣布正式 release (邮件模版参考社区, 待补)
+发邮件到 `general@incubator.apache.org` 抄送 `dev@hugegraph.apache.org` 宣布正式 release (邮件模版 如下：)
+
+```
+Hi all,
+
+Apache HugeGraph (Incubating) Team is glad to announce the new release of
+version 1.x.x
+
+HugeGraph is a fast-speed and highly-scalable distributed graph database,
+it provides the basic "Graph Traverser" for OLTP query, and also support
+"Graph Computing" for OLAP needs now. Our (final) goal is to provide a
+one-click "Graph Service", welcome to use and give us feedback, participate
+in research and dev.
+
+In this version, we have fixed some SEC-related issues. And this is the first
+release version of hugegraph-ai, it contains a variety of features,
+including an initialized Python client, knowledge graph construction
+capabilities through LLM, and the integration of RAG based on HugeGraph.
+
+
+
+Download Links: https://hugegraph.apache.org/docs/download/download/
+
+Github Release Tag:
+- https://github.com/apache/incubator-hugegraph/releases/tag/1.x.x
+- https://github.com/apache/incubator-hugegraph-toolchain/releases/tag/1.x.x
+- https://github.com/apache/incubator-hugegraph-ai/releases/tag/1.x.x
+
+Release Notes:
+- https://hugegraph.apache.org/docs/changelog/hugegraph-1.x.x-release-notes/
+(EN)
+-
+https://hugegraph.apache.org/cn/docs/changelog/hugegraph-1.x.x-release-notes/
+(CN)
+
+Website: https://hugegrapgh.apache.org/
+
+HugeGraph Resources:
+- Issue: https://github.com/apache/incubator-hugegraph/issues
+- Mailing list: dev@hugegraph.apache.org
+
+JackyYang
+On behalf of Apache HugeGraph(incubating) Team
+
+```
 
 
 
