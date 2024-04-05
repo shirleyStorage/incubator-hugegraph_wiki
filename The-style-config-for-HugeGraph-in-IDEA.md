@@ -7,7 +7,7 @@
 3. How to configure and start the [server environment(win/unix)](https://hugegraph.apache.org/cn/docs/contribution-guidelines/hugegraph-server-idea-setup/) in local `IDEA`
 4. **PR Title** submission specification refers to [Google-Conventional-Commit](https://www.conventionalcommits.org/en/v1.0.0/#summary), the community simplifies it based on it and removes the extended tag such as `style/ci/build/perf/test`, only retains the **core** `feat/fix/chore/doc/refact` (except for exclusive nouns, all use **lowercase letters**)
  `e.g: fix(server): NPE when query Gremlin`
-5. You can read and learn the article [Some Tips for Using GitHub](https://xuanwo.io/reports/2022-32/) (if you aren't familiar with it)
+5. You can read and learn the article [Some Tips for Using GitHub(CN)](https://xuanwo.io/reports/2022-32/) (if you aren't familiar with it)
 
 
 ## 0x01: General Configuration
