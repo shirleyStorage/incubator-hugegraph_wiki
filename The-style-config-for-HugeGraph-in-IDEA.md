@@ -5,7 +5,9 @@
 1. It is recommended that both beginners and experienced users try to use the [Desktop](https://desktop.github.com/) desktop end launched by GitHub official, which greatly simplifies and integrates git usage. A brief document will be written later for explanation.
 2. It is recommended to install and enable the [Refined Github](https://github.com/refined-github/refined-github) plugin in the browser. After binding the personal GitHub token, the full function is turned on, further optimizing various usage details, and the usage is smoother (Issue/PR/CI/conflicts, etc.)
 3. How to configure and start the [server environment(win/unix)](https://hugegraph.apache.org/cn/docs/contribution-guidelines/hugegraph-server-idea-setup/) in local `IDEA`
-4. **PR Title** submission specification refers to [Google-Conventional-Commit](https://www.conventionalcommits.org/en/v1.0.0/#summary), the community simplifies it based on it and removes the extended tag such as `style/ci/build/perf/test`, only retains the **core** `feat/fix/chore/doc/refact` (except for exclusive nouns, all use **lowercase letters**)
+4. **PR Title** submission specification refers to [Google-Conventional-Commit](https://www.conventionalcommits.org/en/v1.0.0/#summary)
+   - We simplifies it based on it and removes the extended tag such as `style/ci/build/perf/test`
+   - Only retains the **core** `feat/fix/chore/doc/refact/BREAKING CHANGE` (except for exclusive nouns, all use **lowercase letters**)
  `e.g: fix(server): NPE when query Gremlin`
 5. You can read and learn the article [Some Tips for Using GitHub(CN)](https://xuanwo.io/reports/2022-32/) (if you aren't familiar with it)
 
@@ -77,7 +79,9 @@ Appendix: (ASF standard header, new files should adopt this typesetting, some ol
 1. 推荐新手/熟手都可以直接尝试使用 GitHub 官方推出的 [Desktop](https://desktop.github.com/) 桌面端, 大幅简化和一体化 git 使用, 之后需要会单独写个简短文档说明
 2. 推荐浏览器安装启用 [Refined Github](https://github.com/refined-github/refined-github) 插件, 绑定个人 GitHub token 后开启完整功能, 进一步优化各种使用细节, 使用更加顺滑 (Issue/PR/CI/conflicts等)
 3. 本地 `IDEA` 如何配置启动 [server 环境(win/unix)](https://hugegraph.apache.org/cn/docs/contribution-guidelines/hugegraph-server-idea-setup/)  
-4. **PR Title** 提交规范参考 [Google-Conventional-Commit](https://www.conventionalcommits.org/zh-hans/v1.0.0/#%E6%A6%82%E8%BF%B0), 社区基于它简化去掉了 `style/ci/build/perf/test` 这种扩展 tag, 只保留**最核心**的 `feat/fix/chore/doc/refact` (除专属名词外均采用**小写字母**)
+4. **PR Title** 提交规范参考 [Google-Conventional-Commit](https://www.conventionalcommits.org/zh-hans/v1.0.0/#%E6%A6%82%E8%BF%B0)
+   - 社区基于它简化去掉了 `style/ci/build/perf/test` 这些扩展 tag
+   - 只保留/使用**最核心**的 `feat/fix/chore/doc/refact/BREAKING CHANGE` (除专属名词外均采用**小写字母**)
  `e.g: fix(server): NPE when query Gremlin`
 5. 可阅读学习 [GitHub 使用的一些小技巧](https://xuanwo.io/reports/2022-32/) 文章
 
