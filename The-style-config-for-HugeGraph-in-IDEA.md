@@ -21,14 +21,13 @@
   - Create a "Copyright Profile" in the IDEA settings, copy the community license header comment text configuration (also select it in "profile" as your **default copyright** settings)
   - Please note the configuration of IDEA's "**Actions on save**" function, which can do multiple things at one time when (automatically) saving files (but still need to check again)
     - It is recommended to check "Reformat Code" + "Optimize imports" + "Run code cleanup" + "Update copyright", but pay attention to testing and checking for errors first ("Rearrange code" needs to pay attention to some old codes, or temporarily turn off if there are many adjustments found)
-    - Formatting is recommended to **exclude in advance** protobuf generated files, as well as files that do not need/should not be formatted (if it is not easy to exclude, you should temporarily disable some functions of Actions on save to handle separately)
     - The "clean code" place can help us avoid a lot of problems that do not meet the `code` requirements. Note that some IDEA are just warnings (default not modified), but *code is mandatory, it is recommended to **configure** to modify (for example, if missing parentheses)
   - Please ensure that all files in the entire warehouse are "LF" **line breaks**
     - If there is non-compliance, [format first](https://codeantenna.com/a/afhmHjwAjT), and then make the first **commit**, otherwise the subsequent package name will be identified as **the entire file** modification (important)
     - It is recommended to set git to prohibit **mixed line breaks** to submit `git config --global core.safecrlf true` (and set to automatically convert LF line breaks when submitting `git config --global core.autocrlf input`)
     - A better way is to configure the `.gitattributes` file at the root of the project, and set the submission line break of this project on any platform in it (recommended)
 
-> Ordinary students stop here, after the above operations are completed, you can quickly start HG's code reading/development
+> Ordinary students/devs could **stop here**, after the above operations are completed, you can quickly start HG's code reading/development
 
 ## 0x02: Code Clean
 
