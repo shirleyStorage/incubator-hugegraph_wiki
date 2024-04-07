@@ -1,4 +1,4 @@
-> (EN version) The background is the configuration and description under IDEA. For non-IDEA, you need to consider other methods temporarily, or provide similar documents for reference (subsequent partners can update to the official website)
+> (EN version) The background is the configuration and description under IDEA. For non-IDEA, you need to consider other methods temporarily, or provide similar documents for reference (You can update to the official website with PR, THX)
 
 ## 0x00: Github PR/Git Process/Usage
 
@@ -18,8 +18,7 @@
   - First import the IDEA-specific [hugegraph-style.xml](https://github.com/apache/incubator-hugegraph/blob/master/hugegraph-style.xml) code style configuration (**must**)
   - Install [autocorrect](https://plugins.jetbrains.com/plugin/20244-autocorrect) + [grammar check](https://github.com/apache/incubator-hugegraph-doc/pull/282#issuecomment-1719156940)(grazie) plugins in the IDEA store, and turn on the use in the [options](https://github.com/apache/incubator-hugegraph-doc/pull/282#issuecomment-1719156940), automatically process typesetting comments/Chinese and English/spaces/punctuation, etc.)
   - Check the "Auto Import" option to ensure that "Add on the fly" + "Optimize on the fly" is turned on✓
-  - Create a "Copyright Profile" in the IDEA settings, copy the community license header comment text configuration, first test a single file/small range, and then spread to the module level
-    - Please confirm the **comment** format of **different types** of files in the "Formatting" configuration (for example, Java/JS/Shell/SQL/XML, etc., do not directly use the default value, use the **community corresponding type file** as the reference standard confirmation)
+  - Create a "Copyright Profile" in the IDEA settings, copy the community license header comment text configuration (also config "auto add it when create a new file")
   - Please note the configuration of IDEA's "**Actions on save**" function, which can do multiple things at one time when (automatically) saving files (but still need to check again)
     - It is recommended to check "Reformat Code" + "Optimize imports" + "Run code cleanup" + "Update copyright", but pay attention to testing and checking for errors first ("Rearrange code" needs to pay attention to some old codes, or temporarily turn off if there are many adjustments found)
     - Formatting is recommended to **exclude in advance** protobuf generated files, as well as files that do not need/should not be formatted (if it is not easy to exclude, you should temporarily disable some functions of Actions on save to handle separately)
