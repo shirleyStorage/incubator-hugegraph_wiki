@@ -15,7 +15,7 @@ git clone -b pd-store https://github.com/apache/hugegraph.git
 2. 在项目根目录下构建
 
 ```Bash
-cd hugegraph # root path
+cd hugegraph
 mvn clean install -DskipTests=true
 ```
 
