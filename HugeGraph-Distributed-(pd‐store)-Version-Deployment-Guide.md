@@ -174,7 +174,7 @@ port: 8183
 
 这个[压缩包](https://github.com/hugegraph/hugegraph/releases/download/pd-store-tmp/multi-server.zip)包含了 Server 节点 A, B, C 完整的配置文件，用于**在 IDEA 中**快捷启动多节点 Server
 
-> IDEA 某个运行配置的工作路径设置为对应的配置文件路径
+> 将 IDEA 某个运行配置的工作路径设置为对应的配置文件路径
 >
 > ![image](https://github.com/apache/incubator-hugegraph/assets/79143929/1abb5e66-1025-438c-b722-66b9abb4171a)
 
