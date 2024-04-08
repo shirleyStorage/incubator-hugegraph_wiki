@@ -107,17 +107,17 @@ cd hugegraph-server/apache-hugegraph-incubating-1.5.0.1
 # 多节点配置参考
 
 - 3 PD
-  - raft ports 8610, 8611, 8612
-  - rpc ports 8686, 8687, 8688
-  - rest ports 8620, 8621, 8622
+  - raft ports: 8610, 8611, 8612
+  - rpc ports: 8686, 8687, 8688
+  - rest ports: 8620, 8621, 8622
 - 3 Store
-  - raft ports 8610, 8611, 8612
-  - rpc ports 8686, 8687, 8688
-  - rest ports 8620, 8621, 8622
-- 3 Server (disable auth + distributed scheduler)
-  - rest ports 8081, 8082, 8083
-  - rpc ports 8091, 8092, 8093
-  - gremlin ports 8181, 8182, 8183
+  - raft ports: 8610, 8611, 8612
+  - rpc ports: 8686, 8687, 8688
+  - rest ports: 8620, 8621, 8622
+- 3 Server (disable auth + use distributed scheduler)
+  - rest ports: 8081, 8082, 8083
+  - rpc ports: 8091, 8092, 8093
+  - gremlin ports: 8181, 8182, 8183
 
 ## server
 
