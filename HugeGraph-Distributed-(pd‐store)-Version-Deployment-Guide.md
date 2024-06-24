@@ -49,7 +49,7 @@ cd hugegraph-pd/dist/hugegraph-pd-1.5.0.1
 ./bin/start-hugegraph-pd.sh
 ```
 
-若启动正常，可以在 `hugegraph-pd/dist/hugegraph-pd-1.5.0.1/logs/hugegraph-pd.log` 找到下述日志
+若启动正常，可以在 `hugegraph-pd/dist/hugegraph-pd-1.5.0.1/logs/hugegraph-pd-stdout.log` 找到下述日志
 
 ```Plain
 2024-04-08 15:15:45 [main] [INFO] o.a.h.p.b.HugePDServer - Started HugePDServer in 3.879 seconds (JVM running for 5.149)
@@ -62,7 +62,7 @@ cd hugegraph-store/dist/hugegraph-store-1.5.0.1
 ./bin/start-hugegraph-store.sh
 ```
 
-若启动正常，可以在 `hugegraph-store/dist/hugegraph-store-1.5.0.1/logs/hugegraph-store.log` 找到下述日志
+若启动正常，可以在 `hugegraph-store/dist/hugegraph-store-1.5.0.1/logs/hugegraph-store-server.log` 找到下述日志
 
 ```Plain
 2024-04-08 15:16:29 [main] [INFO] o.a.h.s.n.StoreNodeApplication - Started StoreNodeApplication in 4.794 seconds (JVM running for 6.21)
