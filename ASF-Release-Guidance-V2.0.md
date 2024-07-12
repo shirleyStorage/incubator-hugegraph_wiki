@@ -284,7 +284,7 @@ A: 首先如果是出现 `401: Unauthorized`  多半是你 `settings.xml` 的配
 <!-- 本地的 settings.xml, 最新版已经内置于每个项目的 pom.xml 里, 使用 -P profileID 即可启用, 无需再单独添加 -->
 <profiles>
   <profile>
-    <id>staged-releases</id>
+    <id>stage</id>
     <repositories>
       <repository>
         <id>staged-releases</id>
@@ -295,7 +295,7 @@ A: 首先如果是出现 `401: Unauthorized`  多半是你 `settings.xml` 的配
 </profiles>
 ```
 
-然后确认你的 idea 编译时使用了启用这个配置, 如果还是访问不到, 试着在项目的根下执行一下 `mvn verify -Pstaged-releases` 看是否能拉取到.
+然后确认你的 idea 编译时使用了启用这个配置, 如果还是访问不到, 试着在项目的根下执行一下 `mvn verify -Pstage` 看是否能拉取到.
 
 另外有个问题就是如果 Gtihub 的 Action/CI 中如果想要拉取这些临时 jar 包, 那就也需要携带一下这个仓库配置, 最简单的办法是在项目的 `pom.xml` 文件中加入这个配置 (可参考 toolchain 的 pom 底), 但生产环境不太建议这样做, 会影响所有用户的拉取优先级.
 
