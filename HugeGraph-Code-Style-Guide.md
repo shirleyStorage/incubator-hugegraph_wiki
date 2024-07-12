@@ -4,7 +4,7 @@
 
 ### 1. 行长度
 
-建议单行 `≤100`, IDEA 强烈建议导入项目根下的 `hugegraph-style.xml` 配置文件进行格式化
+建议单行 `≤100`, IDEA 强烈建议导入项目根下的 `[.editorconfig](https://github.com/apache/incubator-hugegraph/blob/master/.editorconfig)` 配置文件进行格式化
 
 > Eclipse、Idea 等 IDE 均可针对项目进行设置，下文所述的换行对齐规则一般 IDE 也可设置。
 
