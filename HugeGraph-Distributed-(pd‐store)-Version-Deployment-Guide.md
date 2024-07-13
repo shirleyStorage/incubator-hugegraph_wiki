@@ -18,6 +18,11 @@ git clone -b pd-store https://github.com/apache/hugegraph.git
 cd hugegraph
 mvn clean install -DskipTests=true
 ```
+- 使用m系列芯片的Mac用户需要执行下列命令进行构建
+```Bash
+cd hugegraph
+mvn clean install -DskipTests=true -Dos.detected.classifier=osx-x86_64
+```
 
 若构建成功，PD, Store, Server 三个模块的构建产物将依次存放在
 
